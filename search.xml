@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>test</title>
+      <link href="/2022/08/25/test/"/>
+      <url>/2022/08/25/test/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag>  test </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>2022-test</title>
       <link href="/2022/08/25/2022-test/"/>
       <url>/2022/08/25/2022-test/</url>
@@ -22,19 +41,6 @@
       <url>/2022/03/16/hexo%E7%BD%91%E7%AB%99%E9%85%8D%E7%BD%AE/</url>
       
         <content type="html"><![CDATA[<h1 id="1-安装gitbash"><a href="#1-安装gitbash" class="headerlink" title="1:安装gitbash"></a>1:安装gitbash</h1><h1 id="2-打开gitbash-设置user-name和email"><a href="#2-打开gitbash-设置user-name和email" class="headerlink" title="2: 打开gitbash 设置user.name和email"></a>2: 打开gitbash 设置user.name和email</h1><p>&#96;&#96;</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name <span class="string">&quot;你的GitHub用户名&quot;</span></span><br><span class="line">git config --global user.email <span class="string">&quot;你的GitHub注册邮箱&quot;</span></span><br></pre></td></tr></table></figure><h1 id="3-生成秘钥和github绑定"><a href="#3-生成秘钥和github绑定" class="headerlink" title="3: 生成秘钥和github绑定"></a>3: 生成秘钥和github绑定</h1><h1 id="4-安装node"><a href="#4-安装node" class="headerlink" title="4:安装node"></a>4:安装node</h1><h1 id="5-安装hexo"><a href="#5-安装hexo" class="headerlink" title="5: 安装hexo"></a>5: 安装hexo</h1><p>&#96;&#96;</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli </span><br></pre></td></tr></table></figure><h1 id="6-然后新建一个新的空文件-进入到新建的空文件初始化"><a href="#6-然后新建一个新的空文件-进入到新建的空文件初始化" class="headerlink" title="6:然后新建一个新的空文件,进入到新建的空文件初始化"></a>6:然后新建一个新的空文件,进入到新建的空文件初始化</h1><p>&#96;&#96;</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init blog</span><br></pre></td></tr></table></figure><p>然后测试</p><p>&#96;&#96;</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">hexo new test_my_site // 新建一篇文章</span><br><span class="line"></span><br><span class="line">hexo g  // hexo generate #生成</span><br><span class="line"></span><br><span class="line">hexo s // 打开本地服务器</span><br></pre></td></tr></table></figure><p>如果不出意外 服务器启动成功,显示访问端口: localhost: 4000</p><h1 id="主题配置"><a href="#主题配置" class="headerlink" title="主题配置"></a>主题配置</h1><p><a href="https://github.com/litten/hexo-theme-yilia">https://github.com/litten/hexo-theme-yilia</a></p><p>根据文档主题待定</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>test</title>
-      <link href="/2022/03/16/test/"/>
-      <url>/2022/03/16/test/</url>
-      
-        <content type="html"><![CDATA[]]></content>
       
       
       
