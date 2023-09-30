@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>hexo</title>
+      <link href="/2023/09/30/hexo%E9%85%8D%E7%BD%AE/"/>
+      <url>/2023/09/30/hexo%E9%85%8D%E7%BD%AE/</url>
+      
+        <content type="html"><![CDATA[<h1 id="关于hexo-git-上传老是超时报错"><a href="#关于hexo-git-上传老是超时报错" class="headerlink" title="关于hexo git 上传老是超时报错"></a>关于hexo git 上传老是超时报错</h1><p>在配置完hexo 上传发布到 git 的时候老是会报错ssl, 超时错误.</p><p><img src="https://raw.githubusercontent.com/rongchaoChen/mypic/main/img/202309302337039.png" class="lazyload" data-srcset="https://raw.githubusercontent.com/rongchaoChen/mypic/main/img/202309302337039.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p><p>这时候可以修改hexo 根目录下的<code>_config.yml</code>的<code> deploy</code> 项的<code>repo</code> 下面是默认的</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">## repo: https://github.com/rongchaoChen/rongchaoChen.github.io.git</span><br></pre></td></tr></table></figure><p>修改成</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">repo: git@github.com:git用户名/git用户名.github.io</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> -hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>newtEST</title>
       <link href="/2023/09/30/newTest/"/>
       <url>/2023/09/30/newTest/</url>
