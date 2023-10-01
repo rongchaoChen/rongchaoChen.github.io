@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>md文章模版</title>
+      <link href="/2023/10/01/md%E6%96%87%E7%AB%A0%E6%A8%A1%E7%89%88/"/>
+      <url>/2023/10/01/md%E6%96%87%E7%AB%A0%E6%A8%A1%E7%89%88/</url>
+      
+        <content type="html"><![CDATA[<hr><p>这里的 内容是是正文的概要</p><span id="more"></span><h1 id="h1-标题"><a href="#h1-标题" class="headerlink" title="h1 标题"></a>h1 标题</h1><ul><li><p>这是h1 标题</p><hr><p>title: 文章名称</p><p>author: 作者</p><p>cattegories:  [文章分类]</p><p>该字段, 可以在主题中如果下载好的插件,可配置进来</p><p>文章首行缩进:</p><p>​    plugins: </p><p>​            - inent,</p><h1 id="h1标题"><a href="#h1标题" class="headerlink" title="h1标题"></a>h1标题</h1><h1 id="h1-标题-1"><a href="#h1-标题-1" class="headerlink" title="h1 标题"></a>h1 标题</h1><h2 id="h2标题"><a href="#h2标题" class="headerlink" title="h2标题"></a>h2标题</h2><h1 id="h1标题-1"><a href="#h1标题-1" class="headerlink" title="h1标题"></a>h1标题</h1></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> md </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> md </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>hexo</title>
       <link href="/2023/09/30/hexo%E9%85%8D%E7%BD%AE/"/>
       <url>/2023/09/30/hexo%E9%85%8D%E7%BD%AE/</url>
