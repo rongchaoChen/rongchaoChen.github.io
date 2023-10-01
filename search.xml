@@ -4,36 +4,11 @@
   
     
     <entry>
-      <title>md文章模版</title>
-      <link href="/2023/10/01/md%E6%96%87%E7%AB%A0%E6%A8%A1%E7%89%88/"/>
-      <url>/2023/10/01/md%E6%96%87%E7%AB%A0%E6%A8%A1%E7%89%88/</url>
-      
-        <content type="html"><![CDATA[<hr><p>这里的 内容是是正文的概要</p><span id="more"></span><h1 id="h1-标题"><a href="#h1-标题" class="headerlink" title="h1 标题"></a>h1 标题</h1><ul><li><p>这是h1 标题</p><hr><p>title: 文章名称</p><p>author: 作者</p><p>cattegories:  [文章分类]</p><p>该字段, 可以在主题中如果下载好的插件,可配置进来</p><p>文章首行缩进:</p><p>​    plugins: </p><p>​            - inent,</p><h1 id="h1标题"><a href="#h1标题" class="headerlink" title="h1标题"></a>h1标题</h1><h1 id="h1-标题-1"><a href="#h1-标题-1" class="headerlink" title="h1 标题"></a>h1 标题</h1><h2 id="h2标题"><a href="#h2标题" class="headerlink" title="h2标题"></a>h2标题</h2><h3 id="这是h3-标题"><a href="#这是h3-标题" class="headerlink" title="这是h3 标题"></a>这是h3 标题</h3><h4 id="这是h4标题"><a href="#这是h4标题" class="headerlink" title="这是h4标题"></a>这是h4标题</h4><h1 id="h1标题-1"><a href="#h1标题-1" class="headerlink" title="h1标题"></a>h1标题</h1></li></ul>]]></content>
-      
-      
-      <categories>
-          
-          <category> md </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> md </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>hexo</title>
       <link href="/2023/09/30/hexo%E9%85%8D%E7%BD%AE/"/>
       <url>/2023/09/30/hexo%E9%85%8D%E7%BD%AE/</url>
       
-        <content type="html"><![CDATA[<h1 id="关于hexo-git-上传老是超时报错"><a href="#关于hexo-git-上传老是超时报错" class="headerlink" title="关于hexo git 上传老是超时报错"></a>关于hexo git 上传老是超时报错</h1><p>在配置完hexo 上传发布到 git 的时候老是会报错ssl, 超时错误.</p><p><img src="https://raw.githubusercontent.com/rongchaoChen/mypic/main/img/202309302337039.png" class="lazyload" data-srcset="https://raw.githubusercontent.com/rongchaoChen/mypic/main/img/202309302337039.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p><p>这时候可以修改hexo 根目录下的<code>_config.yml</code>的<code> deploy</code> 项的<code>repo</code> 下面是默认的</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">## repo: https://github.com/rongchaoChen/rongchaoChen.github.io.git</span><br></pre></td></tr></table></figure><p>修改成</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">repo: git@github.com:git用户名/git用户名.github.io</span><br></pre></td></tr></table></figure>]]></content>
+        <content type="html"><![CDATA[<h2 id="关于hexo-git-上传老是超时报错"><a href="#关于hexo-git-上传老是超时报错" class="headerlink" title="关于hexo git 上传老是超时报错"></a>关于hexo git 上传老是超时报错</h2><p>在配置完hexo 上传发布到 git 的时候老是会报错ssl, 超时错误.</p><p><img src="https://raw.githubusercontent.com/rongchaoChen/mypic/main/img/202309302337039.png" class="lazyload" data-srcset="https://raw.githubusercontent.com/rongchaoChen/mypic/main/img/202309302337039.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p><p>这时候可以修改hexo 根目录下的<code>_config.yml</code>的<code> deploy</code> 项的<code>repo</code> 下面是默认的</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">## repo: https://github.com/rongchaoChen/rongchaoChen.github.io.git</span><br></pre></td></tr></table></figure><p>修改成</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">repo: git@github.com:git用户名/git用户名.github.io</span><br></pre></td></tr></table></figure><h2 id="hexo-文章模版"><a href="#hexo-文章模版" class="headerlink" title="hexo 文章模版"></a>hexo 文章模版</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">titile:文章名称</span><br><span class="line">author: 作者\</span><br><span class="line">categories: [文章分类]</span><br><span class="line">tag: &quot;文章标签&quot;</span><br><span class="line"></span><br><span class="line">文章摘要</span><br><span class="line">&lt;!--more --&gt;</span><br><span class="line">正文</span><br></pre></td></tr></table></figure>]]></content>
       
       
       <categories>
