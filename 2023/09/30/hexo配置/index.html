@@ -47,7 +47,7 @@
 <meta property="og:locale">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2023-09-30T15:27:44.542Z">
-<meta property="article:modified_time" content="2023-10-01T05:10:44.658Z">
+<meta property="article:modified_time" content="2023-10-01T15:14:10.085Z">
 <meta property="article:author" content="chen">
 <meta property="article:tag" content="hexo">
 <meta name="twitter:card" content="summary">
@@ -1700,9 +1700,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 		'}'+
 	'</style>'+
     '<div class="kill-ie">'+
-        `<span class="kill-t"><b>抱歉，您的浏览器无法访问本站</b></span><br/>`+
-        `<span class="kill-c">微软已经于2016年终止了对 Internet Explorer (IE) 10 及更早版本的支持，<br/>继续使用存在极大的安全隐患，请使用当代主流的浏览器进行访问。</span><br/>`+
-        `<a target="_blank" rel="noopener" href="https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/"><strong>了解详情 ></strong></a>`+
+        `<span class="kill-t"><b>Sorry, your browser cannot access this site</b></span><br/>`+
+        `<span class="kill-c">Microsoft has terminated support for Internet Explorer (IE) 10 and earlier versions in 2016. <br/>There are great security risks to continue using it. Please use contemporary mainstream browsers to access.</span><br/>`+
+        `<a target="_blank" rel="noopener" href="https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/"><strong>Learn more ></strong></a>`+
     '</div>');
 </script>
 
@@ -1730,9 +1730,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 		}
 	</style>
     <div class="kill-noscript">
-        <span class="kill-t"><b>抱歉，您的浏览器无法访问本站</b></span><br/>
-        <span class="kill-c">本页面需要浏览器支持（启用）JavaScript</span><br/>
-        <a target="_blank" rel="noopener" href="https://www.baidu.com/s?wd=启用JavaScript"><strong>了解详情 ></strong></a>
+        <span class="kill-t"><b>Sorry, your browser cannot access this site</b></span><br/>
+        <span class="kill-c">This page requires browser support (enable) JavaScript</span><br/>
+        <a target="_blank" rel="noopener" href="https://www.baidu.com/s?wd=启用JavaScript"><strong>Learn more ></strong></a>
     </div>
 </noscript>
 
@@ -2114,7 +2114,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1696143312745),
+    lastupdate: new Date(1696173396154),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -2152,8 +2152,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     languages: {
       
         search: {
-          hits_empty: "找不到您查询的内容：${query}",
-          hits_stats: "找到 ${hits} 条结果，用时 ${time} 毫秒",
+          hits_empty: "We didn't find any results for the search: ${query}.",
+          hits_stats: "${hits} results found in ${time} ms",
         }
       
     }
@@ -2486,13 +2486,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class="new-meta-item wordcount">
     <a class='notlink'>
       <i class="fa-solid fa-keyboard fa-fw" aria-hidden="true"></i>
-      <p>字数：123 字</p>
+      <p>247 words</p>
     </a>
   </div>
   <div class="new-meta-item readtime">
     <a class='notlink'>
       <i class="fa-solid fa-hourglass-half fa-fw" aria-hidden="true"></i>
-      <p>时长：1 分钟</p>
+      <p>1 min</p>
     </a>
   </div>
 
@@ -2556,6 +2556,51 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <h2 id="hexo-文章模版"><a href="#hexo-文章模版" class="headerlink" title="hexo 文章模版"></a>hexo 文章模版</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">titile:文章名称</span><br><span class="line">author: 作者\</span><br><span class="line">categories: [文章分类]</span><br><span class="line">tag: &quot;文章标签&quot;</span><br><span class="line"></span><br><span class="line">文章摘要</span><br><span class="line">&lt;!--more --&gt;</span><br><span class="line">正文</span><br></pre></td></tr></table></figure>
 
+<table>
+<thead>
+<tr>
+<th>page</th>
+<th>独立页面</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>post</td>
+<td>文章页面</td>
+</tr>
+<tr>
+<td>docs</td>
+<td>文档页面</td>
+</tr>
+<tr>
+<td>category</td>
+<td>分类页面</td>
+</tr>
+<tr>
+<td>tag</td>
+<td>标签页面</td>
+</tr>
+<tr>
+<td>friends</td>
+<td>友链页面</td>
+</tr>
+<tr>
+<td>list</td>
+<td>列表页面</td>
+</tr>
+</tbody></table>
+<h2 id="文章布局"><a href="#文章布局" class="headerlink" title="文章布局"></a>文章布局</h2><h3 id="文章分类"><a href="#文章分类" class="headerlink" title="文章分类"></a>文章分类</h3><p>多个分类有两种关系，一种是层级（等同于文件夹），一种是并列（等同于标签）。</p>
+<p>多级分类：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">categories: [分类A, 分类B]</span><br></pre></td></tr></table></figure>
+
+<p>或者</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">categories:</span><br><span class="line">  - 分类A</span><br><span class="line">  - 分类B</span><br></pre></td></tr></table></figure>
+
+<p>并列分类</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">categories:</span><br><span class="line">  - [分类A]</span><br><span class="line">  - [分类B]</span><br></pre></td></tr></table></figure>
+
+<p>多级加并列分类</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">categories:</span><br><span class="line">  - [分类A, 分类B]</span><br><span class="line">  - [分类C, 分类D]</span><br></pre></td></tr></table></figure>
+
 
   </div>
   
@@ -2580,7 +2625,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-10-01T13:10:44+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-10-01T23:14:10+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
     <p>更新于：Oct 1, 2023</p>
@@ -2731,7 +2776,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
   <div class='content'>
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E4%BA%8Ehexo-git-%E4%B8%8A%E4%BC%A0%E8%80%81%E6%98%AF%E8%B6%85%E6%97%B6%E6%8A%A5%E9%94%99"><span class="toc-number">1.</span> <span class="toc-text">关于hexo git 上传老是超时报错</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#hexo-%E6%96%87%E7%AB%A0%E6%A8%A1%E7%89%88"><span class="toc-number">2.</span> <span class="toc-text">hexo 文章模版</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E4%BA%8Ehexo-git-%E4%B8%8A%E4%BC%A0%E8%80%81%E6%98%AF%E8%B6%85%E6%97%B6%E6%8A%A5%E9%94%99"><span class="toc-number">1.</span> <span class="toc-text">关于hexo git 上传老是超时报错</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#hexo-%E6%96%87%E7%AB%A0%E6%A8%A1%E7%89%88"><span class="toc-number">2.</span> <span class="toc-text">hexo 文章模版</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E7%AB%A0%E5%B8%83%E5%B1%80"><span class="toc-number">3.</span> <span class="toc-text">文章布局</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E7%AB%A0%E5%88%86%E7%B1%BB"><span class="toc-number">3.1.</span> <span class="toc-text">文章分类</span></a></li></ol></li></ol>
   </div>
 </section>
 
@@ -2774,14 +2819,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
     
       
-        <div><p>博客内容遵循 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</a></p>
+        <div><p>Blog content follows the <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en">Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) License</a></p>
 </div>
       
     
       
-        本站使用
+        Use
         <a href="https://github.com/volantis-x/hexo-theme-volantis/#6.0.0-alpha.1" target="_blank" class="codename">Volantis</a>
-        作为主题
+        as theme
       
     
       
@@ -3225,7 +3270,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"chen","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"chen","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"你是想说什么吗"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"chen"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/categories/hexo/","name":"-hexo"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2023/09/30/hexo配置/","name":"hexo"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"chen","url":"http://example.com/","keywords":null,"description":"你是想说什么吗","author":{"@type":"Person","name":"chen","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"你是想说什么吗"},"publisher":{"@type":"Organization","name":"chen","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"hexo","description":"你是想说什么吗","inLanguage":"-zh-CN -en","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2023/09/30/hexo%E9%85%8D%E7%BD%AE/"},"author":{"@type":"Person","name":"chen","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"chen","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2023/09/30/hexo%E9%85%8D%E7%BD%AE/","wordCount":0,"datePublished":"2023-09-30T15:27:44.542Z","dateModified":"2023-10-01T05:10:44.658Z","articleSection":"-hexo","keywords":"hexo","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"chen","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"chen","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"你是想说什么吗"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"chen"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/categories/hexo/","name":"-hexo"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2023/09/30/hexo配置/","name":"hexo"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"chen","url":"http://example.com/","keywords":null,"description":"你是想说什么吗","author":{"@type":"Person","name":"chen","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"你是想说什么吗"},"publisher":{"@type":"Organization","name":"chen","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"hexo","description":"你是想说什么吗","inLanguage":"-zh-CN -en","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2023/09/30/hexo%E9%85%8D%E7%BD%AE/"},"author":{"@type":"Person","name":"chen","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"chen","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2023/09/30/hexo%E9%85%8D%E7%BD%AE/","wordCount":0,"datePublished":"2023-09-30T15:27:44.542Z","dateModified":"2023-10-01T15:14:10.085Z","articleSection":"-hexo","keywords":"hexo","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
