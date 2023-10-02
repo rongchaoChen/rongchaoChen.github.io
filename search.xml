@@ -4,6 +4,60 @@
   
     
     <entry>
+      <title>npm</title>
+      <link href="/2023/10/02/npm/"/>
+      <url>/2023/10/02/npm/</url>
+      
+        <content type="html"><![CDATA[<h2 id="npm-下载源设置"><a href="#npm-下载源设置" class="headerlink" title="npm 下载源设置"></a>npm 下载源设置</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">npm config get registry  <span class="comment">// 查看npm当前镜像源</span></span><br><span class="line"></span><br><span class="line">npm config set registry <span class="attr">https</span>:<span class="comment">//registry.npm.taobao.org/  // 设置npm镜像源为淘宝镜像</span></span><br><span class="line"></span><br><span class="line">yarn config get registry  <span class="comment">// 查看yarn当前镜像源</span></span><br><span class="line"></span><br><span class="line">yarn config set registry <span class="attr">https</span>:<span class="comment">//registry.npm.taobao.org/  // 设置yarn镜像源为淘宝镜像</span></span><br><span class="line"># https -&gt; http，这样网速就会好很多</span><br><span class="line"></span><br><span class="line">npm config set registry <span class="attr">http</span>:<span class="comment">//registry.npmjs.org</span></span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 工具 </category>
+          
+          <category> npm </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> npm </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>git</title>
+      <link href="/2023/10/02/git/"/>
+      <url>/2023/10/02/git/</url>
+      
+        <content type="html"><![CDATA[<h2 id="git-设置"><a href="#git-设置" class="headerlink" title="git 设置"></a>git 设置</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name gitaccount</span><br><span class="line">git config --global user.email gitaccount@example.com</span><br><span class="line"></span><br></pre></td></tr></table></figure><h2 id="git-取消全局设置"><a href="#git-取消全局设置" class="headerlink" title="git 取消全局设置"></a>git 取消全局设置</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git config --global --unset user.name</span><br><span class="line">git config --global --unset user.email</span><br><span class="line">git config --global user.name</span><br><span class="line">#全局配置账户已经移除</span><br><span class="line">git config --global user.email</span><br></pre></td></tr></table></figure><h2 id="git-取消代理"><a href="#git-取消代理" class="headerlink" title="git 取消代理"></a>git 取消代理</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global --unset https.proxy</span><br><span class="line">git config --global --unset http.proxy</span><br></pre></td></tr></table></figure><h2 id="error-RPC-failed；-curl-28-OpenSSL-SSL-read-Connection-was-reset-errno-10054-fatal-expected-证书错误"><a href="#error-RPC-failed；-curl-28-OpenSSL-SSL-read-Connection-was-reset-errno-10054-fatal-expected-证书错误" class="headerlink" title="error: RPC failed； curl 28 OpenSSL SSL_read: Connection was reset, errno 10054 fatal: expected 证书错误"></a>error: RPC failed； curl 28 OpenSSL SSL_read: Connection was reset, errno 10054 fatal: expected 证书错误</h2><p>忽略证书错误</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global http.sslVerify &quot;false&quot;</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 工具 </category>
+          
+          <category> git </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> git </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>pip install</title>
       <link href="/2023/10/02/pip%20install%E6%93%8D%E4%BD%9C/"/>
       <url>/2023/10/02/pip%20install%E6%93%8D%E4%BD%9C/</url>
