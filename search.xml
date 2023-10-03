@@ -4,19 +4,6 @@
   
     
     <entry>
-      <title></title>
-      <link href="/2023/10/03/%E7%AE%80%E5%8E%86/"/>
-      <url>/2023/10/03/%E7%AE%80%E5%8E%86/</url>
-      
-        <content type="html"><![CDATA[<p>负责员工入离职手续的办理，员工劳动合同的签订、续签、新员工的入职培训管理</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>npm</title>
       <link href="/2023/10/02/npm/"/>
       <url>/2023/10/02/npm/</url>
@@ -63,31 +50,6 @@
         <tags>
             
             <tag> git </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>pip install</title>
-      <link href="/2023/10/02/pip%20install%E6%93%8D%E4%BD%9C/"/>
-      <url>/2023/10/02/pip%20install%E6%93%8D%E4%BD%9C/</url>
-      
-        <content type="html"><![CDATA[<h2 id="pip-install-操作"><a href="#pip-install-操作" class="headerlink" title="pip install 操作"></a>pip install 操作</h2><ul><li><p>pip install  包名</p></li><li><p>pip show –files 安装包名 查看是否安装</p></li><li><p>检查更新</p></li><li><ul><li>pip list –outdated</li></ul></li><li><p>pip 升级包</p></li><li><ul><li>pip install – upgrade 要升级的包名</li></ul></li><li><p>pip 卸载</p></li><li><ul><li>pip uninstall 要卸载的包</li></ul></li></ul>]]></content>
-      
-      
-      <categories>
-          
-          <category> others </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> others </tag>
             
         </tags>
       
