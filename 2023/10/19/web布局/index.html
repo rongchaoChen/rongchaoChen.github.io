@@ -47,7 +47,7 @@
 <meta property="og:locale">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2023-10-19T15:59:54.893Z">
-<meta property="article:modified_time" content="2023-10-19T16:08:06.700Z">
+<meta property="article:modified_time" content="2023-10-19T16:26:12.504Z">
 <meta property="article:author" content="chen">
 <meta property="article:tag" content="css">
 <meta name="twitter:card" content="summary">
@@ -2114,7 +2114,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1697731759481),
+    lastupdate: new Date(1698161935476),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -2486,7 +2486,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class="new-meta-item wordcount">
     <a class='notlink'>
       <i class="fa-solid fa-keyboard fa-fw" aria-hidden="true"></i>
-      <p>字數：143字</p>
+      <p>字數：369字</p>
     </a>
   </div>
   <div class="new-meta-item readtime">
@@ -2553,7 +2553,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <h1 id="web布局"><a href="#web布局" class="headerlink" title="web布局"></a>web布局</h1><p>最早期的互联网的页面是没有css布局的,仅仅以超文本语言来构建页面.这也导致<code>html</code> 本身的原始规范基本不具备能准确控制页面的布局能力.</p>
 <p>早期的web 设计时代, web 页面上的信息元素都是按照正常的流排序来组织的, 它没有色块, 没有图形,只有文字.</p>
 <h2 id="表格布局"><a href="#表格布局" class="headerlink" title="表格布局"></a>表格布局</h2><p>互联网的发展是快速的, 在html2.0 之后, 新增了图片<code>&lt;img&gt;</code>  表单<code>&lt;from&gt;</code> 和表格<code>&lt;table&gt;</code></p>
+<p>后面用于展示数据的表格被用于web 的布局上, 且越来越受欢迎. 这个时候表格布局诞生了.</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">table</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;<span class="name">td</span> <span class="attr">colspan</span>=<span class="string">&quot;2&quot;</span>&gt;</span>顶部<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;<span class="name">td</span>&gt;</span>左列<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;<span class="name">td</span>&gt;</span>右列<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;/<span class="name">table</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
+<p><img src="https://raw.githubusercontent.com/rongchaoChen/mypic/main/img/202310200015840.png" class="lazyload" data-srcset="https://raw.githubusercontent.com/rongchaoChen/mypic/main/img/202310200015840.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p>虽然<code>&lt;table&gt;</code> 表格再布局上有着天生的不足, 但是它却改变了web 设计的历史, 因为这时候起诞生了web 布局这样一个概念.</p>
+<p>然后再后来, 网景和微软发动了对html 的改革, 淘汰了展示用的html 标签, 这时候与html 结构分离的联级样式随之到来.</p>
+<p>1996 年层叠样式表<code>css</code> 诞生, 允许了我们将WEB 页面结构<code>HTML</code>和样式信息<code>CSS</code> 分开. 样式规则可以保存至单独的文档</p>
+<h2 id="浮动布局"><a href="#浮动布局" class="headerlink" title="浮动布局"></a>浮动布局</h2>
   </div>
   
   
@@ -2577,7 +2584,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-10-20T00:08:06+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-10-20T00:26:12+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
     <p>更新于：Oct 20, 2023</p>
@@ -2727,7 +2734,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
   <div class='content'>
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A1%A8%E6%A0%BC%E5%B8%83%E5%B1%80"><span class="toc-number">1.</span> <span class="toc-text">表格布局</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A1%A8%E6%A0%BC%E5%B8%83%E5%B1%80"><span class="toc-number">1.</span> <span class="toc-text">表格布局</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B5%AE%E5%8A%A8%E5%B8%83%E5%B1%80"><span class="toc-number">2.</span> <span class="toc-text">浮动布局</span></a></li></ol>
   </div>
 </section>
 
@@ -3221,7 +3228,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"chen","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"chen","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"你是想说什么吗"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"chen"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/categories/web/","name":"web"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/categories/css/","name":"css"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2023/10/19/web布局/","name":"web布局"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"chen","url":"http://example.com/","keywords":null,"description":"你是想说什么吗","author":{"@type":"Person","name":"chen","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"你是想说什么吗"},"publisher":{"@type":"Organization","name":"chen","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"web布局","description":"你是想说什么吗","inLanguage":"-zh-CN -en","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2023/10/19/web%E5%B8%83%E5%B1%80/"},"author":{"@type":"Person","name":"chen","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"chen","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2023/10/19/web%E5%B8%83%E5%B1%80/","wordCount":0,"datePublished":"2023-10-19T15:59:54.893Z","dateModified":"2023-10-19T16:08:06.700Z","articleSection":"web","keywords":"css","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"chen","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"chen","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"你是想说什么吗"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"chen"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/categories/web/","name":"web"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/categories/css/","name":"css"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2023/10/19/web布局/","name":"web布局"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"chen","url":"http://example.com/","keywords":null,"description":"你是想说什么吗","author":{"@type":"Person","name":"chen","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"你是想说什么吗"},"publisher":{"@type":"Organization","name":"chen","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"web布局","description":"你是想说什么吗","inLanguage":"-zh-CN -en","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2023/10/19/web%E5%B8%83%E5%B1%80/"},"author":{"@type":"Person","name":"chen","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"chen","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2023/10/19/web%E5%B8%83%E5%B1%80/","wordCount":0,"datePublished":"2023-10-19T15:59:54.893Z","dateModified":"2023-10-19T16:26:12.504Z","articleSection":"web","keywords":"css","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
