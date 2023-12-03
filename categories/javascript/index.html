@@ -2111,7 +2111,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1701616154140),
+    lastupdate: new Date(1701616542975),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -2494,14 +2494,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class='md article-desc' itemprop="articleBody">
     
       
-        模板语法文本插值&lt;span&gt;message &#123;&#123; msg &#125;&#125;&lt;/span&gt;
+        模板语法文本插值1&lt;span&gt;message &#123;&#123; msg &#125;&#125;&lt;/span&gt;
 
-&lt;script setup&gt;
-import &#123; ref &#125; from &quot;vue&quot;;
-const msg = ref(&#39;hello&#39;)
-&lt;/script&gt;
+1234&lt;script setup&gt;import &#123; ref &#125; from &quot;vue&quot;;const msg = ref(&#x27;hello&#x27;)&lt;/script&gt;
 
-双大括号中的标...
+
+
+双...
       
     
   </div>
@@ -2602,11 +2601,11 @@ Undefined表示一个变量不存在, 或者声明了却没有赋值初始化.
           <a class="category-link" href="/categories/javascript/">javascript</a><span class="sep"></span><a class="category-link" href="/categories/%E9%98%85%E8%AF%BB/">阅读</a>
           
             <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E9%98%85%E8%AF%BB/" itemprop="url"><span itemprop="name">阅读</span></a>
+              <a href="/categories/javascript/" itemprop="url"><span itemprop="name">javascript</span></a>
             </span>
           
             <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/javascript/" itemprop="url"><span itemprop="name">javascript</span></a>
+              <a href="/categories/%E9%98%85%E8%AF%BB/" itemprop="url"><span itemprop="name">阅读</span></a>
             </span>
           
         
@@ -2720,14 +2719,13 @@ Undefined表示一个变量不存在, 或者声明了却没有赋值初始化.
       
         对象在JavaScript 中对象可以通过两种形式定义,: 声明和构造形式.
 对象声明:
-const obj = &#123;&#125;
+1const obj = &#123;&#125;
 
 构造声明
-cosnt obj = new Object();
-obj.value = value
+12cosnt obj = new Object();obj.value = value
 
 上面两种生成的对象是一样. 区别只在在于, 在对象声明中我们可以一次性添加多个键值对, 而构造声明需要诸葛添加属性
-对象类型在JavaScript 中主...
+对象类型在JavaScript ...
       
     
   </div>
@@ -2741,11 +2739,11 @@ obj.value = value
           <a class="category-link" href="/categories/javascript/">javascript</a><span class="sep"></span><a class="category-link" href="/categories/%E9%98%85%E8%AF%BB/">阅读</a>
           
             <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E9%98%85%E8%AF%BB/" itemprop="url"><span itemprop="name">阅读</span></a>
+              <a href="/categories/javascript/" itemprop="url"><span itemprop="name">javascript</span></a>
             </span>
           
             <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/javascript/" itemprop="url"><span itemprop="name">javascript</span></a>
+              <a href="/categories/%E9%98%85%E8%AF%BB/" itemprop="url"><span itemprop="name">阅读</span></a>
             </span>
           
         
@@ -2804,11 +2802,11 @@ obj.value = value
           <a class="category-link" href="/categories/javascript/">javascript</a><span class="sep"></span><a class="category-link" href="/categories/%E9%98%85%E8%AF%BB/">阅读</a>
           
             <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E9%98%85%E8%AF%BB/" itemprop="url"><span itemprop="name">阅读</span></a>
+              <a href="/categories/javascript/" itemprop="url"><span itemprop="name">javascript</span></a>
             </span>
           
             <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/javascript/" itemprop="url"><span itemprop="name">javascript</span></a>
+              <a href="/categories/%E9%98%85%E8%AF%BB/" itemprop="url"><span itemprop="name">阅读</span></a>
             </span>
           
         
@@ -2860,8 +2858,7 @@ obj.value = value
         this在javascript 中, 因为是一门弱类型语言, 在很多时候, 总是会和强类型语言,如java python 这种强类型语言又着一些很不同的区别.
 就如this 而言, 在常规认知理解中, this 顾名思义从英语的语法角度来说 把他理解成指向函数的本身.但是事实真的是这样的吗.
 首先我们来看下面这段代码:
-function foo(num)&#123;
-    console....
+1234567891011function foo(num)&#123;...
       
     
   </div>
