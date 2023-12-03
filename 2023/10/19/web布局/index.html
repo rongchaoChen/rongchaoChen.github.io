@@ -2114,7 +2114,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1701590258777),
+    lastupdate: new Date(1701591262068),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -2670,9 +2670,17 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     <div class="prev-next">
       
+        <a class='prev' href='/2023/12/03/Hexo%E4%B8%BB%E9%A2%98%E4%BB%A3%E7%A0%81%E5%A4%8D%E5%88%B6/'>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>Hexo主题代码复制</p>
+          <p class='content'>以前在hexo 配置的时候, 代码复制功能都是不存在的, 需要自己编辑, 但是现在随着hexo 的更新和更大的主题的进化, 基本都添加了这个代码复制的功能,. 
+尤其实在更新了主题后, 
+
+本身...</p>
+        </a>
+      
       
         <a class='next' href='/2023/10/08/vue/'>
-          <p class='title'>vue<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='title'>Vue<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
           <p class='content'>模板语法文本插值1&lt;span&gt;message &#123;&#123; msg &#125;&#125;&lt;/span&gt;
 
 1234&lt;script setup&gt;...</p>
@@ -3241,75 +3249,5 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <!-- Custom Files bodyEnd begin-->
     
     <!-- Custom Files bodyEnd end-->
-  <!-- hexo injector body_end start -->
-  <style>
-    .highlight {
-      position: relative;
-    }
-    .highlight .code .copy-btn{
-      position: absolute;
-      top: 0;
-      right: 0;
-      padding: 4px 0.5rem;
-      opacity: 0.25;
-      font-weight: 700;
-      color: var(--theme);
-      cursor: pointer;
-      transination: opacity 0.3s;
-    }
-    .highlight .code .copy-btn:hover{
-      color: var(--text-code);
-      opacity: 0.75;
-    }
-    .highlight .code .copy-btn.success {
-      color: var(--swiper-theme-color);
-      opacity: 0.75;
-
-    }
-    
-  </style>
-  <script>
-    const codeElementArr = document.querySelectorAll('.code')
-    codeElementArr.forEach(code => {
-      const codeBeforeWidth = window.getComputedStyle(code, '::before').width.split('px')[0]
-      const codeBeforePadding = window.getComputedStyle(code, '::before').padding.split(' ').pop().split('px')[0]
-  
-      // copy btn 
-      const codeCopyBtn = document.createElement('div')
-      codeCopyBtn.classList.add('copy-btn')
-      codeCopyBtn.style.right = Number(codeBeforeWidth) + Number(codeBeforePadding) * 2 + 'px'
-      codeCopyBtn.innerText = '复制代码'
-      code.appendChild(codeCopyBtn)
-  
-      codeCopyBtn.addEventListener('click', async () => {
-        const currentCodeElement = code.children[0]?.innerText
-        await copyCode(currentCodeElement)
-
-
-        codeCopyBtn.innerText = '复制成功'
-        codeCopyBtn.classList.add('success')
-
-        setTimeout(() => {
-          codeCopyBtn.innerText = '复制代码'
-          codeCopyBtn.classList.remove('success')
-        },1000)
-      })
-    })
-    
-    async function copyCode(currentCode) {
-      console.log(currentCode)
-      console.log('复制代码')
-      if (navigator.clipboard) {
-        try {
-          await navigator.clipboard.writeText(currentCode)
-        } catch (error) {
-          // 未获得用户许可
-          console.error(error)
-        }
-      } else {
-        console.error('当前浏览器不支持此api')
-      }
-    }
-  </script>
-  <!-- hexo injector body_end end --></body>
+  </body>
 </html>

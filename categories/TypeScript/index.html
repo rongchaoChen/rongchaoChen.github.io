@@ -2111,7 +2111,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1701590258777),
+    lastupdate: new Date(1701591262068),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -2636,7 +2636,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           <li><a class="flat-box"
             title="/categories/hexo/" href="/categories/hexo/"
             active-action="action-categorieshexo"
-            ><div class='name'>-hexo</div><div class='badge'>(1)</div></a></li>
+            ><div class='name'>-hexo</div><div class='badge'>(2)</div></a></li>
         
           <li><a class="flat-box"
             title="/categories/intellij/" href="/categories/intellij/"
@@ -2716,7 +2716,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
     <div class='content'>
-      <a href="/tags/test/" style="font-size: 14px; color: #999"> test</a> <a href="/tags/TypeScript/" style="font-size: 14px; color: #999">TypeScript</a> <a href="/tags/css/" style="font-size: 14px; color: #999">css</a> <a href="/tags/git/" style="font-size: 14px; color: #999">git</a> <a href="/tags/hexo/" style="font-size: 14px; color: #999">hexo</a> <a href="/tags/javascript/" style="font-size: 14px; color: #999">javascript</a> <a href="/tags/npm/" style="font-size: 14px; color: #999">npm</a> <a href="/tags/vue/" style="font-size: 14px; color: #999">vue</a> <a href="/tags/webpack-vue/" style="font-size: 19px; color: #777">webpack/vue</a> <a href="/tags/%E9%98%85%E8%AF%BB/" style="font-size: 24px; color: #555">阅读</a>
+      <a href="/tags/test/" style="font-size: 14px; color: #999"> test</a> <a href="/tags/TypeScript/" style="font-size: 14px; color: #999">TypeScript</a> <a href="/tags/Vue/" style="font-size: 14px; color: #999">Vue</a> <a href="/tags/css/" style="font-size: 14px; color: #999">css</a> <a href="/tags/git/" style="font-size: 14px; color: #999">git</a> <a href="/tags/hexo/" style="font-size: 19px; color: #777">hexo</a> <a href="/tags/javascript/" style="font-size: 14px; color: #999">javascript</a> <a href="/tags/npm/" style="font-size: 14px; color: #999">npm</a> <a href="/tags/webpack-vue/" style="font-size: 19px; color: #777">webpack/vue</a> <a href="/tags/%E9%98%85%E8%AF%BB/" style="font-size: 24px; color: #555">阅读</a>
     </div>
   </section>
 
@@ -2742,7 +2742,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <div class="webinfo-item">
           <div>文章数目：</div>
-          <div>17 篇</div>
+          <div>18 篇</div>
         </div>
       
 
@@ -2752,7 +2752,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <div class="webinfo-item">
           <div>本站总字数：</div>
-          <div>25.5k 字</div>
+          <div>25.9k 字</div>
         </div>
       
 
@@ -3272,75 +3272,5 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <!-- Custom Files bodyEnd begin-->
     
     <!-- Custom Files bodyEnd end-->
-  <!-- hexo injector body_end start -->
-  <style>
-    .highlight {
-      position: relative;
-    }
-    .highlight .code .copy-btn{
-      position: absolute;
-      top: 0;
-      right: 0;
-      padding: 4px 0.5rem;
-      opacity: 0.25;
-      font-weight: 700;
-      color: var(--theme);
-      cursor: pointer;
-      transination: opacity 0.3s;
-    }
-    .highlight .code .copy-btn:hover{
-      color: var(--text-code);
-      opacity: 0.75;
-    }
-    .highlight .code .copy-btn.success {
-      color: var(--swiper-theme-color);
-      opacity: 0.75;
-
-    }
-    
-  </style>
-  <script>
-    const codeElementArr = document.querySelectorAll('.code')
-    codeElementArr.forEach(code => {
-      const codeBeforeWidth = window.getComputedStyle(code, '::before').width.split('px')[0]
-      const codeBeforePadding = window.getComputedStyle(code, '::before').padding.split(' ').pop().split('px')[0]
-  
-      // copy btn 
-      const codeCopyBtn = document.createElement('div')
-      codeCopyBtn.classList.add('copy-btn')
-      codeCopyBtn.style.right = Number(codeBeforeWidth) + Number(codeBeforePadding) * 2 + 'px'
-      codeCopyBtn.innerText = '复制代码'
-      code.appendChild(codeCopyBtn)
-  
-      codeCopyBtn.addEventListener('click', async () => {
-        const currentCodeElement = code.children[0]?.innerText
-        await copyCode(currentCodeElement)
-
-
-        codeCopyBtn.innerText = '复制成功'
-        codeCopyBtn.classList.add('success')
-
-        setTimeout(() => {
-          codeCopyBtn.innerText = '复制代码'
-          codeCopyBtn.classList.remove('success')
-        },1000)
-      })
-    })
-    
-    async function copyCode(currentCode) {
-      console.log(currentCode)
-      console.log('复制代码')
-      if (navigator.clipboard) {
-        try {
-          await navigator.clipboard.writeText(currentCode)
-        } catch (error) {
-          // 未获得用户许可
-          console.error(error)
-        }
-      } else {
-        console.error('当前浏览器不支持此api')
-      }
-    }
-  </script>
-  <!-- hexo injector body_end end --></body>
+  </body>
 </html>
