@@ -43,7 +43,7 @@
 <meta property="og:title" content="你不知道的javascript阅读笔记">
 <meta property="og:url" content="http://example.com/2023/10/01/%E4%BD%A0%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84javascript%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/index.html">
 <meta property="og:site_name" content="chen">
-<meta property="og:description" content="对象在JavaScript 中对象可以通过两种形式定义,: 声明和构造形式. 对象声明: 1const obj &#x3D; &amp;#123;&amp;#125;  构造声明 12cosnt obj &#x3D; new Object();obj.value &#x3D; value  上面两种生成的对象是一样. 区别只在在于, 在对象声明中我们可以一次性添加多个键值对, 而构造声明需要诸葛添加属性 对象类型在JavaScript 中主要">
+<meta property="og:description" content="对象在JavaScript 中对象可以通过两种形式定义,: 声明和构造形式. 对象声明: const obj &#x3D; &amp;#123;&amp;#125;  构造声明 cosnt obj &#x3D; new Object(); obj.value &#x3D; value  上面两种生成的对象是一样. 区别只在在于, 在对象声明中我们可以一次性添加多个键值对, 而构造声明需要诸葛添加属性 对象类型在JavaScript 中主要有六">
 <meta property="og:locale">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2023-10-01T15:32:49.172Z">
@@ -1700,9 +1700,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 		'}'+
 	'</style>'+
     '<div class="kill-ie">'+
-        `<span class="kill-t"><b>抱歉，您的瀏覽器無法訪問本站</b></span><br/>`+
-        `<span class="kill-c">微軟已經於2016年終止了對 Internet Explorer (IE) 10 及更早版本的支持，<br/>繼續使用存在極大的安全隱患，請使用當代主流的瀏覽器進行訪問。</span><br/>`+
-        `<a target="_blank" rel="noopener" href="https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/"><strong>了解詳情 ></strong></a>`+
+        `<span class="kill-t"><b>Sorry, your browser cannot access this site</b></span><br/>`+
+        `<span class="kill-c">Microsoft has terminated support for Internet Explorer (IE) 10 and earlier versions in 2016. <br/>There are great security risks to continue using it. Please use contemporary mainstream browsers to access.</span><br/>`+
+        `<a target="_blank" rel="noopener" href="https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/"><strong>Learn more ></strong></a>`+
     '</div>');
 </script>
 
@@ -1730,9 +1730,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 		}
 	</style>
     <div class="kill-noscript">
-        <span class="kill-t"><b>抱歉，您的瀏覽器無法訪問本站</b></span><br/>
-        <span class="kill-c">本頁面需要瀏覽器支持（啟用）JavaScript</span><br/>
-        <a target="_blank" rel="noopener" href="https://www.baidu.com/s?wd=启用JavaScript"><strong>了解詳情 ></strong></a>
+        <span class="kill-t"><b>Sorry, your browser cannot access this site</b></span><br/>
+        <span class="kill-c">This page requires browser support (enable) JavaScript</span><br/>
+        <a target="_blank" rel="noopener" href="https://www.baidu.com/s?wd=启用JavaScript"><strong>Learn more ></strong></a>
     </div>
 </noscript>
 
@@ -2114,7 +2114,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1701615489238),
+    lastupdate: new Date(1701615837977),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -2152,8 +2152,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     languages: {
       
         search: {
-          hits_empty: "找不到您查詢的內容：${query}",
-          hits_stats: "找到 ${hits} 條結果，用時 ${time} 毫秒",
+          hits_empty: "We didn't find any results for the search: ${query}.",
+          hits_stats: "${hits} results found in ${time} ms",
         }
       
     }
@@ -2486,13 +2486,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class="new-meta-item wordcount">
     <a class='notlink'>
       <i class="fa-solid fa-keyboard fa-fw" aria-hidden="true"></i>
-      <p>字數：2.7k字</p>
+      <p>2.7k words</p>
     </a>
   </div>
   <div class="new-meta-item readtime">
     <a class='notlink'>
       <i class="fa-solid fa-hourglass-half fa-fw" aria-hidden="true"></i>
-      <p>時長：11分鐘</p>
+      <p>11 min</p>
     </a>
   </div>
 
@@ -2552,11 +2552,12 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div id="post-body" itemprop="articleBody">
     <h2 id="对象"><a href="#对象" class="headerlink" title="对象"></a>对象</h2><p>在JavaScript 中对象可以通过两种形式定义,: 声明和构造形式.</p>
 <p>对象声明:</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> obj = &#123;&#125;</span><br></pre></td></tr></table></figure>
-
+<pre><code class="javascript">const obj = &#123;&#125;
+</code></pre>
 <p>构造声明</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cosnt obj = <span class="keyword">new</span> <span class="title class_">Object</span>();</span><br><span class="line">obj.<span class="property">value</span> = value</span><br></pre></td></tr></table></figure>
-
+<pre><code class="javascript">cosnt obj = new Object();
+obj.value = value
+</code></pre>
 <p>上面两种生成的对象是一样. 区别只在在于, 在对象声明中我们可以一次性添加多个键值对, 而构造声明需要诸葛添加属性</p>
 <h3 id="对象类型"><a href="#对象类型" class="headerlink" title="对象类型"></a>对象类型</h3><p>在JavaScript 中主要有六种数据类型:</p>
 <ul>
@@ -2582,30 +2583,84 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </ul>
 <h3 id="对象键值"><a href="#对象键值" class="headerlink" title="对象键值"></a>对象键值</h3><p>对象的内容本身是由任意类型的值,组成的我们统称为属性,</p>
 <p>在需要访问对象的值的时候我们通常使用<code>.</code> 操作符, 或者<code>[]</code> 操作符来访问. 其中前者被称为属性访问, 后者被称为见访问.</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> obj = &#123;</span><br><span class="line">  <span class="attr">a</span>: <span class="number">2</span>,</span><br><span class="line">&#125;;</span><br><span class="line"><span class="comment">// 点操作符</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(obj.<span class="property">a</span>);</span><br><span class="line"><span class="comment">// 属性操作</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(obj[<span class="string">&#x27;a&#x27;</span>]);</span><br></pre></td></tr></table></figure>
-
+<pre><code class="javascript">const obj = &#123;
+  a: 2,
+&#125;;
+// 点操作符
+console.log(obj.a);
+// 属性操作
+console.log(obj[&#39;a&#39;]);
+</code></pre>
 <p>这两种属性访问的区别在于,<code>.</code> 操作符需要满足标识符的命名规范, 而<code>[“”]</code> 操作符, 可以接受任何UTF-8&#x2F;Unicode字符串为属性名.</p>
 <p>在对象中属性永远都是字符串,即使使用string 意外的字面量为属性名, 但是他也会隐性转换为字符串</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">cosnt obj = &#123;</span><br><span class="line">	<span class="number">2</span>: a</span><br><span class="line">	<span class="string">&quot;2&quot;</span>:b</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<pre><code class="javascript">cosnt obj = &#123;
+    2: a
+    &quot;2&quot;:b
 
+&#125;
+</code></pre>
 <h3 id="属性和方法"><a href="#属性和方法" class="headerlink" title="属性和方法"></a>属性和方法</h3><p>在JavaScript 中如果访问的对象属性是一个函数在其他语言中, 在理解中这个函数可以被称为对象的访问, 但是在JavaScript 语法规范中, 函数永远不会属于一个对象,. 这是因为函数具有<code>this</code>的引用, 虽然有时这些<code>this</code> 确实会指向调用位置的对象引用. 但是JavaScript 的 this 是在运行时根据调用位置动态绑定, 函数和对象的关系只能称为间接关系</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">foo</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;foo&#x27;</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">const</span> someFoo = foo;</span><br><span class="line"><span class="keyword">const</span> myObject = &#123;</span><br><span class="line">  <span class="attr">someFoo</span>: foo,</span><br><span class="line">&#125;;</span><br><span class="line"><span class="title function_">foo</span>();</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(someFoo);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(myObject.<span class="property">someFoo</span>);</span><br></pre></td></tr></table></figure>
+<pre><code class="JavaScript">function foo() &#123;
+  console.log(&#39;foo&#39;);
+&#125;
+const someFoo = foo;
+const myObject = &#123;
+  someFoo: foo,
+&#125;;
+foo();
 
+console.log(someFoo);
+console.log(myObject.someFoo);
+</code></pre>
 <p>正如上面的代码中, <code>someFoo</code> 和 <code> Object.someFoo</code>  中都是对同一个函数 <code>foo</code> 的引用, 同理这也能说明 对象中的函数,它并不是属于对象的一个方法.</p>
 <h3 id="对象复制Object-assign"><a href="#对象复制Object-assign" class="headerlink" title="对象复制Object.assign()"></a>对象复制Object.assign()</h3><p>对象的复制分为浅拷贝和深拷贝.</p>
 <p>浅拷贝:</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> obj = &#123;<span class="attr">a</span>: <span class="number">1</span>&#125;</span><br><span class="line"><span class="keyword">const</span> newobj = <span class="title class_">Object</span>.<span class="title function_">assign</span>(&#123;&#125;, obj)</span><br></pre></td></tr></table></figure>
-
-
-
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> person1 = &#123;</span><br><span class="line">    <span class="attr">name</span>: <span class="string">&#x27;p1&#x27;</span>,</span><br><span class="line">    <span class="attr">age</span>: <span class="number">18</span>,</span><br><span class="line">  &#125;;</span><br><span class="line">  <span class="keyword">var</span> person2 = &#123;&#125;;</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">const</span> key <span class="keyword">in</span> person1) &#123;</span><br><span class="line">    person2[key] = person1[key];</span><br><span class="line">  &#125;</span><br><span class="line">  person2.<span class="property">name</span> = <span class="string">&#x27;p2&#x27;</span>;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(person1, person2);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
+<pre><code class="javascript">const obj = &#123;a: 1&#125;
+const newobj = Object.assign(&#123;&#125;, obj)
+</code></pre>
+<pre><code class="javascript">var person1 = &#123;
+    name: &#39;p1&#39;,
+    age: 18,
+  &#125;;
+  var person2 = &#123;&#125;;
+  for (const key in person1) &#123;
+    person2[key] = person1[key];
+  &#125;
+  person2.name = &#39;p2&#39;;
+  console.log(person1, person2);
+</code></pre>
 <p>深拷贝</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">deepClone</span>(<span class="params">origin, target</span>) &#123;</span><br><span class="line">    <span class="keyword">var</span> target = target || &#123;&#125;;</span><br><span class="line">    <span class="keyword">var</span> toStr = <span class="title class_">Object</span>.<span class="property"><span class="keyword">prototype</span></span>.<span class="property">toString</span>;</span><br><span class="line">    <span class="keyword">var</span> arrType = <span class="string">&#x27;[object Array]&#x27;</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">const</span> key <span class="keyword">in</span> origin) &#123;</span><br><span class="line">      <span class="keyword">if</span> (origin.<span class="title function_">hasOwnProperty</span>(key)) &#123;</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">typeof</span> origin[key] === <span class="string">&#x27;object&#x27;</span> &amp;&amp; origin[key] !== <span class="literal">null</span>) &#123;</span><br><span class="line">          <span class="keyword">if</span> (toStr.<span class="title function_">call</span>(origin[key]) === arrType) &#123;</span><br><span class="line">            target[key] = [];</span><br><span class="line">          &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            target[key] = &#123;&#125;;</span><br><span class="line">          &#125;</span><br><span class="line">          <span class="title function_">deepClone</span>(origin[key], target[key]);</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">          target[key] = origin[key];</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> target;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
-
+<pre><code class="javascript">function deepClone(origin, target) &#123;
+    var target = target || &#123;&#125;;
+    var toStr = Object.prototype.toString;
+    var arrType = &#39;[object Array]&#39;;
+    for (const key in origin) &#123;
+      if (origin.hasOwnProperty(key)) &#123;
+        if (typeof origin[key] === &#39;object&#39; &amp;&amp; origin[key] !== null) &#123;
+          if (toStr.call(origin[key]) === arrType) &#123;
+            target[key] = [];
+          &#125; else &#123;
+            target[key] = &#123;&#125;;
+          &#125;
+          deepClone(origin[key], target[key]);
+        &#125; else &#123;
+          target[key] = origin[key];
+        &#125;
+      &#125;
+    &#125;
+    return target;
+  &#125;
+</code></pre>
 <p>JSON 拷贝</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">```</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">### 对象属性描述符 getOwnPropertyDescriptor</span><br><span class="line"></span><br><span class="line">在ES5 之前, javascript 本身没有提供可以直接检测属性特性的方法,  比如判断属性是否只读, 但是从es5开始, 所有的属性都具备了属性描述符.</span><br><span class="line"></span><br><span class="line">`getOwnPropertyDescriptor` 来查看对象属性</span><br><span class="line"></span><br><span class="line">```javascript</span><br><span class="line">const obj = &#123;</span><br><span class="line">  a: 2,</span><br><span class="line">&#125;;</span><br><span class="line">Object.getOwnPropertyDesscriptor(&#x27;obj&#x27;, &quot;a&quot;) // &#123; value: 2, writable: true, enumerable: true, configurable: true &#125;</span><br></pre></td></tr></table></figure>
-
+<pre><code>
+</code></pre>
+<h3 id="对象属性描述符-getOwnPropertyDescriptor"><a href="#对象属性描述符-getOwnPropertyDescriptor" class="headerlink" title="对象属性描述符 getOwnPropertyDescriptor"></a>对象属性描述符 getOwnPropertyDescriptor</h3><p>在ES5 之前, javascript 本身没有提供可以直接检测属性特性的方法,  比如判断属性是否只读, 但是从es5开始, 所有的属性都具备了属性描述符.</p>
+<p><code>getOwnPropertyDescriptor</code> 来查看对象属性</p>
+<pre><code class="javascript">const obj = &#123;
+  a: 2,
+&#125;;
+Object.getOwnPropertyDesscriptor(&#39;obj&#39;, &quot;a&quot;) // &#123; value: 2, writable: true, enumerable: true, configurable: true &#125;
+</code></pre>
 <p>返回的对象包含了, 该对象的属性描述</p>
 <ul>
 <li><p>value : 表示该属性的值</p>
@@ -2618,47 +2673,131 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </li>
 </ul>
 <p><code>getOwnPropertyDescriptors</code> 产看该对对象的所有属性描述</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"> <span class="keyword">const</span> obj = &#123;</span><br><span class="line">  <span class="attr">a</span>: <span class="number">2</span>,</span><br><span class="line">  <span class="attr">b</span>: <span class="number">2</span>,</span><br><span class="line">&#125;;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title class_">Object</span>.<span class="title function_">getOwnPropertyDescriptors</span>(obj));</span><br><span class="line"><span class="comment">//</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="attr">a</span>: &#123; <span class="attr">value</span>: <span class="number">2</span>, <span class="attr">writable</span>: <span class="literal">true</span>, <span class="attr">enumerable</span>: <span class="literal">true</span>, <span class="attr">configurable</span>: <span class="literal">true</span> &#125;,</span><br><span class="line">  <span class="attr">b</span>: &#123; <span class="attr">value</span>: <span class="number">2</span>, <span class="attr">writable</span>: <span class="literal">true</span>, <span class="attr">enumerable</span>: <span class="literal">true</span>, <span class="attr">configurable</span>: <span class="literal">true</span> &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
+<pre><code class="javascript"> const obj = &#123;
+  a: 2,
+  b: 2,
+&#125;;
+console.log(Object.getOwnPropertyDescriptors(obj));
+//
+&#123;
+  a: &#123; value: 2, writable: true, enumerable: true, configurable: true &#125;,
+  b: &#123; value: 2, writable: true, enumerable: true, configurable: true &#125;
+&#125;
+</code></pre>
 <p>上面的对象时我们我自己声明了一个对象, 看到声明对象的属性个的默认配置, 全部为true, 那么是否是在任何时候对象的属性描述都是true呢?</p>
 <p>在创建普通属性时, 属性描述符都是使用的默认值,默认值都为true, 那么在使用<code>Object.defineProperty</code>  给一个对象添加属性或者修改一个属性,(如果configurable : true的话)</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> obj = &#123;&#125;;</span><br><span class="line"><span class="title class_">Object</span>.<span class="title function_">defineProperty</span>(obj, <span class="string">&#x27;a&#x27;</span>, &#123;</span><br><span class="line">  <span class="attr">value</span>: <span class="number">2</span>,</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title class_">Object</span>.<span class="title function_">getOwnPropertyDescriptors</span>(obj));</span><br><span class="line"><span class="comment">//&#123;</span></span><br><span class="line">  <span class="attr">a</span>: &#123; <span class="attr">value</span>: <span class="number">2</span>, <span class="attr">writable</span>: <span class="literal">false</span>, <span class="attr">enumerable</span>: <span class="literal">false</span>, <span class="attr">configurable</span>: <span class="literal">false</span> &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<pre><code class="javascript">const obj = &#123;&#125;;
+Object.defineProperty(obj, &#39;a&#39;, &#123;
+  value: 2,
+&#125;);
 
+console.log(Object.getOwnPropertyDescriptors(obj));
+//&#123;
+  a: &#123; value: 2, writable: false, enumerable: false, configurable: false &#125;
+&#125;
+</code></pre>
 <p>上面代码可以看到在使用<code>Object.difinePeoperty</code> 为对象添加的属性在不显式执行描述符的时候, 该属性描述符这时候为false,当然也可以在对象添加对属性的时候, 显示的指定的添加.</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> obj = &#123;&#125;;</span><br><span class="line"><span class="title class_">Object</span>.<span class="title function_">defineProperty</span>(obj, <span class="string">&#x27;a&#x27;</span>, &#123;</span><br><span class="line">  <span class="attr">value</span>: <span class="number">2</span>,</span><br><span class="line">  <span class="attr">writable</span>: <span class="literal">true</span>,</span><br><span class="line">  <span class="attr">enumerable</span>: <span class="literal">true</span>,</span><br><span class="line">  <span class="attr">configurable</span>: <span class="literal">true</span>,</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-
+<pre><code class="javascript">const obj = &#123;&#125;;
+Object.defineProperty(obj, &#39;a&#39;, &#123;
+  value: 2,
+  writable: true,
+  enumerable: true,
+  configurable: true,
+&#125;);
+</code></pre>
 <h3 id="对象禁止扩展Object-preventExtensions"><a href="#对象禁止扩展Object-preventExtensions" class="headerlink" title="对象禁止扩展Object.preventExtensions(..)"></a>对象禁止扩展Object.preventExtensions(..)</h3><p>禁止一个对象添加属性, 并且保留自己的属性, 在非严格模式下, 创建新属性会静默失败, 在严格模式下, 会抛出<code>typeError</code> 错误</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> obj = &#123;</span><br><span class="line">  <span class="attr">a</span>: <span class="number">2</span>,</span><br><span class="line">&#125;;</span><br><span class="line"><span class="title class_">Object</span>.<span class="title function_">preventExtensions</span>(obj);</span><br><span class="line">obj.<span class="property">b</span> = <span class="number">3</span>;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title class_">Object</span>.<span class="title function_">getOwnPropertyDescriptors</span>(obj));</span><br><span class="line"><span class="comment">// 可以看到新添加的属性无法添加进去</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="attr">a</span>: &#123; <span class="attr">value</span>: <span class="number">2</span>, <span class="attr">writable</span>: <span class="literal">true</span>, <span class="attr">enumerable</span>: <span class="literal">true</span>, <span class="attr">configurable</span>: <span class="literal">true</span> &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
+<pre><code class="javascript">const obj = &#123;
+  a: 2,
+&#125;;
+Object.preventExtensions(obj);
+obj.b = 3;
+console.log(Object.getOwnPropertyDescriptors(obj));
+// 可以看到新添加的属性无法添加进去
+&#123;
+  a: &#123; value: 2, writable: true, enumerable: true, configurable: true &#125;
+&#125;
+</code></pre>
 <h3 id="对象密封-Object-seal"><a href="#对象密封-Object-seal" class="headerlink" title="对象密封 Object.seal()"></a>对象密封 Object.seal()</h3><p>该方法是在<code>Object.preventExtensions</code> 的扩展,把现有对象属性的描述符<code>configurable</code> 标记改为false.  在使用该方法后 , 不仅不能添加新符属性,, 也不能重新配置或者删除现有属性, 但是可以修改现有属性值</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> obj = &#123;</span><br><span class="line">  <span class="attr">a</span>: <span class="number">2</span>,</span><br><span class="line">&#125;;</span><br><span class="line"><span class="comment">//Object.seal() 前</span></span><br><span class="line"><span class="comment">// a: &#123; value: 2, writable: true, enumerable: true, configurable: true &#125;</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title class_">Object</span>.<span class="title function_">getOwnPropertyDescriptors</span>(obj));</span><br><span class="line"></span><br><span class="line"><span class="comment">// Object.seal() 后</span></span><br><span class="line"><span class="comment">//a: &#123; value: 2, writable: true, enumerable: true, configurable: false &#125;</span></span><br><span class="line"><span class="title class_">Object</span>.<span class="title function_">seal</span>(obj);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title class_">Object</span>.<span class="title function_">getOwnPropertyDescriptors</span>(obj));</span><br></pre></td></tr></table></figure>
+<pre><code class="javascript">const obj = &#123;
+  a: 2,
+&#125;;
+//Object.seal() 前
+// a: &#123; value: 2, writable: true, enumerable: true, configurable: true &#125;
+console.log(Object.getOwnPropertyDescriptors(obj));
 
+// Object.seal() 后
+//a: &#123; value: 2, writable: true, enumerable: true, configurable: false &#125;
+Object.seal(obj);
+console.log(Object.getOwnPropertyDescriptors(obj));
+</code></pre>
 <h3 id="对象冻结Object-freeze"><a href="#对象冻结Object-freeze" class="headerlink" title="对象冻结Object.freeze()"></a>对象冻结Object.freeze()</h3><p>该方法h会在现有对象上调用<code>Object.seal</code> 把数据属性标记为<code> writable: fale</code> 使用了该方法可以禁止该对象本身任意属性的直接修改, 但是对象用用的其他对象不受影响.</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> obj = &#123;</span><br><span class="line">  <span class="attr">a</span>: <span class="number">2</span>,</span><br><span class="line">&#125;;</span><br><span class="line"><span class="comment">// Object.frreze 前</span></span><br><span class="line"><span class="comment">// a: &#123; value: 2, writable: true, enumerable: true, configurable: true &#125;</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title class_">Object</span>.<span class="title function_">getOwnPropertyDescriptors</span>(obj));</span><br><span class="line"><span class="comment">// Object.freeze 后</span></span><br><span class="line"><span class="comment">// a: &#123; value: 2, writable: false, enumerable: true, configurable: false &#125;</span></span><br><span class="line"><span class="title class_">Object</span>.<span class="title function_">freeze</span>(obj);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title class_">Object</span>.<span class="title function_">getOwnPropertyDescriptors</span>(obj));</span><br><span class="line"><span class="comment">// 修改属性本身也是失败</span></span><br><span class="line">obj.<span class="property">a</span> = <span class="number">3</span>;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(obj.<span class="property">a</span>); <span class="comment">// 2</span></span><br></pre></td></tr></table></figure>
-
+<pre><code class="javascript">const obj = &#123;
+  a: 2,
+&#125;;
+// Object.frreze 前
+// a: &#123; value: 2, writable: true, enumerable: true, configurable: true &#125;
+console.log(Object.getOwnPropertyDescriptors(obj));
+// Object.freeze 后
+// a: &#123; value: 2, writable: false, enumerable: true, configurable: false &#125;
+Object.freeze(obj);
+console.log(Object.getOwnPropertyDescriptors(obj));
+// 修改属性本身也是失败
+obj.a = 3;
+console.log(obj.a); // 2
+</code></pre>
 <p>在冻结之前对象引用</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> obj = &#123;a : <span class="number">1</span>&#125;</span><br><span class="line"><span class="comment">// 在冻结之前浅拷贝复制一个对象</span></span><br><span class="line"><span class="keyword">const</span> newObj = <span class="title class_">Object</span>.<span class="title function_">assign</span>(&#123;&#125;, obj)</span><br><span class="line"><span class="title class_">Object</span>.<span class="title function_">freeze</span>(obj)</span><br><span class="line"><span class="comment">// a: &#123; value: 2, writable: false, enumerable: true, configurable: false &#125;</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title class_">Object</span>.<span class="title function_">getOwnPropertyDescriptors</span>(obj));</span><br><span class="line"><span class="comment">// a: &#123; value: 2, writable: true, enumerable: true, configurable: true &#125;</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title class_">Object</span>.<span class="title function_">getOwnPropertyDescriptors</span>(newObj));</span><br><span class="line"><span class="comment">// 修改成功</span></span><br><span class="line">newObj.<span class="property">a</span> = <span class="number">2</span>;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-
-
-
-
+<pre><code class="javascript">const obj = &#123;a : 1&#125;
+// 在冻结之前浅拷贝复制一个对象
+const newObj = Object.assign(&#123;&#125;, obj)
+Object.freeze(obj)
+// a: &#123; value: 2, writable: false, enumerable: true, configurable: false &#125;
+console.log(Object.getOwnPropertyDescriptors(obj));
+// a: &#123; value: 2, writable: true, enumerable: true, configurable: true &#125;
+console.log(Object.getOwnPropertyDescriptors(newObj));
+// 修改成功
+newObj.a = 2;
+</code></pre>
 <h3 id="对象解冻Object-isFrozen"><a href="#对象解冻Object-isFrozen" class="headerlink" title="对象解冻Object.isFrozen"></a>对象解冻Object.isFrozen</h3><p>该方法判断一个对象是否被冻结, 如果被冻结,将返回true.</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">if(Object.isFrozen(obj))&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<pre><code>if(Object.isFrozen(obj))&#123;
 
+&#125;
+</code></pre>
 <h3 id="对象枚举"><a href="#对象枚举" class="headerlink" title="对象枚举"></a>对象枚举</h3><p>在对象属性描述中有一个属性: <code>enumerable</code> 配置对象属性是否可以枚举,</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> obj = &#123;&#125;;</span><br><span class="line"><span class="title class_">Object</span>.<span class="title function_">defineProperties</span>(obj, &#123;</span><br><span class="line">  <span class="attr">a</span>: &#123;</span><br><span class="line">    <span class="attr">value</span>: <span class="number">1</span>,</span><br><span class="line">    <span class="comment">// 可枚举</span></span><br><span class="line">    <span class="attr">enumerable</span>: <span class="literal">true</span>,</span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">b</span>: &#123;</span><br><span class="line">    <span class="attr">value</span>: <span class="number">2</span>,</span><br><span class="line">    <span class="comment">// 不可枚举</span></span><br><span class="line">    <span class="attr">enumerable</span>: <span class="literal">false</span>,</span><br><span class="line">  &#125;,</span><br><span class="line">&#125;);</span><br><span class="line"><span class="comment">// 属性访问全部都能正常访问</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(obj.<span class="property">a</span>, obj.<span class="property">b</span>)</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;b&quot;</span> <span class="keyword">in</span> obj)</span><br><span class="line">obj.<span class="title function_">hasOwnProperty</span>(<span class="string">&quot;b&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">// 遍历对象</span></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">let</span> key <span class="keyword">in</span> obj)&#123;</span><br><span class="line">    <span class="comment">// a: 1</span></span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(k, obj[k])</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<pre><code class="javascript">const obj = &#123;&#125;;
+Object.defineProperties(obj, &#123;
+  a: &#123;
+    value: 1,
+    // 可枚举
+    enumerable: true,
+  &#125;,
+  b: &#123;
+    value: 2,
+    // 不可枚举
+    enumerable: false,
+  &#125;,
+&#125;);
+// 属性访问全部都能正常访问
+console.log(obj.a, obj.b)
+console.log(&quot;b&quot; in obj)
+obj.hasOwnProperty(&quot;b&quot;)
 
+// 遍历对象
+for(let key in obj)&#123;
+    // a: 1
+    console.log(k, obj[k])
+&#125;
+</code></pre>
 <p>在上面的代码中 , 使用了<code>Object.defineProperties</code> 配置了<code>a, b</code> 两个属性, 一个<code>enumerable</code> 配置为false, 一个配置了true,在我们使用了<code>.</code> 访问的时候, 是都能访问到全部属性的, 但是在<code> for</code> 循环中却只出现了一个属性<code>a</code> </p>
 <p>如果需要判断一个属性在对象中是否可以枚举:<strong>propertyIsEnumerable</strong>()</p>
 <p>该方法会检查给定的属性是否直存在对象中, (不会检查原型链)</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">obj.<span class="title function_">propertyIsEnumerable</span>(<span class="string">&quot;a&quot;</span>)<span class="comment">// true</span></span><br><span class="line">obj.<span class="title function_">propertyIsEnumerable</span>(<span class="string">&quot;b&quot;</span>)<span class="comment">// false</span></span><br></pre></td></tr></table></figure>
-
+<pre><code class="javascript">obj.propertyIsEnumerable(&quot;a&quot;)// true
+obj.propertyIsEnumerable(&quot;b&quot;)// false
+</code></pre>
 <p>至于in 和hasOwnProperty 也可以判断一个属性是否存在对象中, 他们的区别在于, <code>in</code> 只会判断对象本身自身是否包含, <code>hasOwnProperty</code> 则会查找原型链</p>
 <p>下面的方法, 要可以枚举对象的属性</p>
 <h4 id="Object-keys"><a href="#Object-keys" class="headerlink" title="Object.keys()"></a>Object.keys()</h4><p>该方法会返回一个数组, 包含所有可枚举的属性</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title class_">Object</span>.<span class="title function_">keys</span>(obj)</span><br></pre></td></tr></table></figure>
-
+<pre><code class="javascript">Object.keys(obj)
+</code></pre>
 <h4 id="Object-gerOwnProeprtyNames"><a href="#Object-gerOwnProeprtyNames" class="headerlink" title="Object.gerOwnProeprtyNames()"></a>Object.gerOwnProeprtyNames()</h4><p>该方法也会返回指定对象中所有的属性, 无论是否可以枚举</p>
 <h3 id="对象遍历"><a href="#对象遍历" class="headerlink" title="对象遍历"></a>对象遍历</h3><h2 id="混合对象“类”"><a href="#混合对象“类”" class="headerlink" title="混合对象“类”"></a>混合对象“类”</h2><p>在面向对象对象编程语言中, 关于对象一直有着这几种机制: 多态, 类, 继承, 封装</p>
 <ul>
@@ -2668,17 +2807,30 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <li>封装: 指的是将数据和操作数据的行为包装在一起的机制, 以防止外部直接访问和修改对象内部的状态. 通过封装, 内部的对象细节对外是影藏的, 只提供公共接口来给其他对象使用</li>
 </ul>
 <p>在hjavascript 中想要实现一个类:</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">Car</span>(<span class="params"></span>)&#123;</span><br><span class="line">	<span class="variable language_">this</span>.<span class="property">color</span> = <span class="string">&quot;red&quot;</span>;</span><br><span class="line">	<span class="variable language_">this</span>.<span class="property">show</span> = <span class="keyword">function</span>(<span class="params"></span>)&#123;</span><br><span class="line">		<span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="variable language_">this</span>.<span class="property">color</span>)</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">const</span> car = <span class="keyword">new</span> <span class="title class_">Car</span>()</span><br><span class="line">car.<span class="title function_">show</span>()</span><br></pre></td></tr></table></figure>
-
+<pre><code class="javascript">function Car()&#123;
+    this.color = &quot;red&quot;;
+    this.show = function()&#123;
+        console.log(this.color)
+    &#125;
+&#125;
+const car = new Car()
+car.show()
+</code></pre>
 <p>在以前都是使用构造函数来生成一个类,然后<code>new</code> 一个实例出来</p>
 <h2 id="原型"><a href="#原型" class="headerlink" title="原型"></a>原型</h2><h3 id="prototype"><a href="#prototype" class="headerlink" title="[[prototype]]"></a>[[prototype]]</h3><p>[[prototype]] 是javascript 对象的内置属性, 他是对象之间继承关系的基础, 在javascript 中, 每一个对象都有一个[[prototype]] , 它指向另外一个对象或者为null . 这个指向的对象被称为原型<code>prototype</code> 当我们访问一个对象的属性时, 如果该对象本身没有该属性, 那么javascript 就会一层层的自动向上去原型上查找,称之为原型链</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> obj1 = &#123;</span><br><span class="line">  <span class="attr">name</span>: <span class="string">&#x27;obj1name&#x27;</span>,</span><br><span class="line">&#125;;</span><br><span class="line"><span class="keyword">const</span> obj2 = &#123;</span><br><span class="line">  <span class="attr">value</span>: <span class="string">&#x27;obj2value&#x27;</span>,</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
+<pre><code class="javascript">const obj1 = &#123;
+  name: &#39;obj1name&#39;,
+&#125;;
+const obj2 = &#123;
+  value: &#39;obj2value&#39;,
+&#125;;
+</code></pre>
 <p><img src="https://raw.githubusercontent.com/rongchaoChen/mypic/main/img/202310052114724.png" class="lazyload" data-srcset="https://raw.githubusercontent.com/rongchaoChen/mypic/main/img/202310052114724.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
 <p>上面的代码可以看到这时候两个obj 的<code>prototype</code> 指向的是<code>Object</code> </p>
 <p>我们使<code>Object.setPrototypeOf()</code> 设置一下原型</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 将obj1 ,设置为obj2 的原型</span></span><br><span class="line"><span class="title class_">Object</span>.<span class="title function_">setPrototypeOf</span>(obj2, obj1)</span><br></pre></td></tr></table></figure>
-
+<pre><code class="javascript">// 将obj1 ,设置为obj2 的原型
+Object.setPrototypeOf(obj2, obj1)
+</code></pre>
 <p><img src="https://raw.githubusercontent.com/rongchaoChen/mypic/main/img/202310052235802.png" class="lazyload" data-srcset="https://raw.githubusercontent.com/rongchaoChen/mypic/main/img/202310052235802.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
 <p>这时候呢个看到<code>obj2</code> 上的原型属性已经变为<code>obj1</code> 的属性了.</p>
 <p>每一个<code>Object.prototype</code> 的顶部都是<code>Object</code>的 原型</p>
@@ -2796,7 +2948,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class='prev' href='/2023/10/02/git/'>
           <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>git</p>
-          <p class='content'>git 设置123git config --global user.name gitaccountgit config --global user.email gitaccount@exampl...</p>
+          <p class='content'>git 设置git config --global user.name gitaccount
+git config --global user.email gitaccount@example....</p>
         </a>
       
       
@@ -2863,7 +3016,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
   <div class='content'>
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AF%B9%E8%B1%A1"><span class="toc-number">1.</span> <span class="toc-text">对象</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AF%B9%E8%B1%A1%E7%B1%BB%E5%9E%8B"><span class="toc-number">1.1.</span> <span class="toc-text">对象类型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%86%85%E7%BD%AE%E5%AF%B9%E8%B1%A1"><span class="toc-number">1.2.</span> <span class="toc-text">内置对象</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AF%B9%E8%B1%A1%E9%94%AE%E5%80%BC"><span class="toc-number">1.3.</span> <span class="toc-text">对象键值</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B1%9E%E6%80%A7%E5%92%8C%E6%96%B9%E6%B3%95"><span class="toc-number">1.4.</span> <span class="toc-text">属性和方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AF%B9%E8%B1%A1%E5%A4%8D%E5%88%B6Object-assign"><span class="toc-number">1.5.</span> <span class="toc-text">对象复制Object.assign()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AF%B9%E8%B1%A1%E7%A6%81%E6%AD%A2%E6%89%A9%E5%B1%95Object-preventExtensions"><span class="toc-number">1.6.</span> <span class="toc-text">对象禁止扩展Object.preventExtensions(..)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AF%B9%E8%B1%A1%E5%AF%86%E5%B0%81-Object-seal"><span class="toc-number">1.7.</span> <span class="toc-text">对象密封 Object.seal()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AF%B9%E8%B1%A1%E5%86%BB%E7%BB%93Object-freeze"><span class="toc-number">1.8.</span> <span class="toc-text">对象冻结Object.freeze()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AF%B9%E8%B1%A1%E8%A7%A3%E5%86%BBObject-isFrozen"><span class="toc-number">1.9.</span> <span class="toc-text">对象解冻Object.isFrozen</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AF%B9%E8%B1%A1%E6%9E%9A%E4%B8%BE"><span class="toc-number">1.10.</span> <span class="toc-text">对象枚举</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Object-keys"><span class="toc-number">1.10.1.</span> <span class="toc-text">Object.keys()</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Object-gerOwnProeprtyNames"><span class="toc-number">1.10.2.</span> <span class="toc-text">Object.gerOwnProeprtyNames()</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AF%B9%E8%B1%A1%E9%81%8D%E5%8E%86"><span class="toc-number">1.11.</span> <span class="toc-text">对象遍历</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B7%B7%E5%90%88%E5%AF%B9%E8%B1%A1%E2%80%9C%E7%B1%BB%E2%80%9D"><span class="toc-number">2.</span> <span class="toc-text">混合对象“类”</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8E%9F%E5%9E%8B"><span class="toc-number">3.</span> <span class="toc-text">原型</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#prototype"><span class="toc-number">3.1.</span> <span class="toc-text">[[prototype]]</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%B1%BB"><span class="toc-number">3.2.</span> <span class="toc-text">类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0"><span class="toc-number">3.3.</span> <span class="toc-text">构造函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8E%9F%E5%9E%8B%E7%BB%A7%E6%89%BF"><span class="toc-number">3.4.</span> <span class="toc-text">原型继承</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A1%8C%E4%B8%BA%E5%A7%94%E6%89%98"><span class="toc-number">4.</span> <span class="toc-text">行为委托</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%B1%BB%E5%9E%8B"><span class="toc-number">5.</span> <span class="toc-text">类型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BC%82%E6%AD%A5"><span class="toc-number">6.</span> <span class="toc-text">异步</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AF%B9%E8%B1%A1"><span class="toc-number">1.</span> <span class="toc-text">对象</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AF%B9%E8%B1%A1%E7%B1%BB%E5%9E%8B"><span class="toc-number">1.1.</span> <span class="toc-text">对象类型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%86%85%E7%BD%AE%E5%AF%B9%E8%B1%A1"><span class="toc-number">1.2.</span> <span class="toc-text">内置对象</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AF%B9%E8%B1%A1%E9%94%AE%E5%80%BC"><span class="toc-number">1.3.</span> <span class="toc-text">对象键值</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B1%9E%E6%80%A7%E5%92%8C%E6%96%B9%E6%B3%95"><span class="toc-number">1.4.</span> <span class="toc-text">属性和方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AF%B9%E8%B1%A1%E5%A4%8D%E5%88%B6Object-assign"><span class="toc-number">1.5.</span> <span class="toc-text">对象复制Object.assign()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AF%B9%E8%B1%A1%E5%B1%9E%E6%80%A7%E6%8F%8F%E8%BF%B0%E7%AC%A6-getOwnPropertyDescriptor"><span class="toc-number">1.6.</span> <span class="toc-text">对象属性描述符 getOwnPropertyDescriptor</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AF%B9%E8%B1%A1%E7%A6%81%E6%AD%A2%E6%89%A9%E5%B1%95Object-preventExtensions"><span class="toc-number">1.7.</span> <span class="toc-text">对象禁止扩展Object.preventExtensions(..)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AF%B9%E8%B1%A1%E5%AF%86%E5%B0%81-Object-seal"><span class="toc-number">1.8.</span> <span class="toc-text">对象密封 Object.seal()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AF%B9%E8%B1%A1%E5%86%BB%E7%BB%93Object-freeze"><span class="toc-number">1.9.</span> <span class="toc-text">对象冻结Object.freeze()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AF%B9%E8%B1%A1%E8%A7%A3%E5%86%BBObject-isFrozen"><span class="toc-number">1.10.</span> <span class="toc-text">对象解冻Object.isFrozen</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AF%B9%E8%B1%A1%E6%9E%9A%E4%B8%BE"><span class="toc-number">1.11.</span> <span class="toc-text">对象枚举</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Object-keys"><span class="toc-number">1.11.1.</span> <span class="toc-text">Object.keys()</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Object-gerOwnProeprtyNames"><span class="toc-number">1.11.2.</span> <span class="toc-text">Object.gerOwnProeprtyNames()</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AF%B9%E8%B1%A1%E9%81%8D%E5%8E%86"><span class="toc-number">1.12.</span> <span class="toc-text">对象遍历</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B7%B7%E5%90%88%E5%AF%B9%E8%B1%A1%E2%80%9C%E7%B1%BB%E2%80%9D"><span class="toc-number">2.</span> <span class="toc-text">混合对象“类”</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8E%9F%E5%9E%8B"><span class="toc-number">3.</span> <span class="toc-text">原型</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#prototype"><span class="toc-number">3.1.</span> <span class="toc-text">[[prototype]]</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%B1%BB"><span class="toc-number">3.2.</span> <span class="toc-text">类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0"><span class="toc-number">3.3.</span> <span class="toc-text">构造函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8E%9F%E5%9E%8B%E7%BB%A7%E6%89%BF"><span class="toc-number">3.4.</span> <span class="toc-text">原型继承</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A1%8C%E4%B8%BA%E5%A7%94%E6%89%98"><span class="toc-number">4.</span> <span class="toc-text">行为委托</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%B1%BB%E5%9E%8B"><span class="toc-number">5.</span> <span class="toc-text">类型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BC%82%E6%AD%A5"><span class="toc-number">6.</span> <span class="toc-text">异步</span></a></li></ol>
   </div>
 </section>
 
@@ -2906,14 +3059,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
     
       
-        <div><p>博客內容遵循 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh_TW">姓名標示-非商業性-相同方式分享 4.0 國際 (CC BY-NC-SA 4.0) 協議</a></p>
+        <div><p>Blog content follows the <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en">Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) License</a></p>
 </div>
       
     
       
-        本站使用
+        Use
         <a href="https://github.com/volantis-x/hexo-theme-volantis/#6.0.0-alpha.1" target="_blank" class="codename">Volantis</a>
-        作為主題
+        as theme
       
     
       

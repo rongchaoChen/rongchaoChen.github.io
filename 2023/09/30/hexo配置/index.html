@@ -43,7 +43,7 @@
 <meta property="og:title" content="hexo">
 <meta property="og:url" content="http://example.com/2023/09/30/hexo%E9%85%8D%E7%BD%AE/index.html">
 <meta property="og:site_name" content="chen">
-<meta property="og:description" content="关于hexo git 上传老是超时报错在配置完hexo 上传发布到 git 的时候老是会报错ssl, 超时错误.  这时候可以修改hexo 根目录下的_config.yml的 deploy 项的repo 下面是默认的 1## repo: https:&#x2F;&#x2F;github.com&#x2F;rongchaoChen&#x2F;rongchaoChen.github.io.git  修改成 12repo: git@githu">
+<meta property="og:description" content="关于hexo git 上传老是超时报错在配置完hexo 上传发布到 git 的时候老是会报错ssl, 超时错误.  这时候可以修改hexo 根目录下的_config.yml的 deploy 项的repo 下面是默认的 ## repo: https:&#x2F;&#x2F;github.com&#x2F;rongchaoChen&#x2F;rongchaoChen.github.io.git  修改成  repo: git@github.">
 <meta property="og:locale">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2023-09-30T15:27:44.542Z">
@@ -1700,9 +1700,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 		'}'+
 	'</style>'+
     '<div class="kill-ie">'+
-        `<span class="kill-t"><b>抱歉，您的瀏覽器無法訪問本站</b></span><br/>`+
-        `<span class="kill-c">微軟已經於2016年終止了對 Internet Explorer (IE) 10 及更早版本的支持，<br/>繼續使用存在極大的安全隱患，請使用當代主流的瀏覽器進行訪問。</span><br/>`+
-        `<a target="_blank" rel="noopener" href="https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/"><strong>了解詳情 ></strong></a>`+
+        `<span class="kill-t"><b>Sorry, your browser cannot access this site</b></span><br/>`+
+        `<span class="kill-c">Microsoft has terminated support for Internet Explorer (IE) 10 and earlier versions in 2016. <br/>There are great security risks to continue using it. Please use contemporary mainstream browsers to access.</span><br/>`+
+        `<a target="_blank" rel="noopener" href="https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/"><strong>Learn more ></strong></a>`+
     '</div>');
 </script>
 
@@ -1730,9 +1730,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 		}
 	</style>
     <div class="kill-noscript">
-        <span class="kill-t"><b>抱歉，您的瀏覽器無法訪問本站</b></span><br/>
-        <span class="kill-c">本頁面需要瀏覽器支持（啟用）JavaScript</span><br/>
-        <a target="_blank" rel="noopener" href="https://www.baidu.com/s?wd=启用JavaScript"><strong>了解詳情 ></strong></a>
+        <span class="kill-t"><b>Sorry, your browser cannot access this site</b></span><br/>
+        <span class="kill-c">This page requires browser support (enable) JavaScript</span><br/>
+        <a target="_blank" rel="noopener" href="https://www.baidu.com/s?wd=启用JavaScript"><strong>Learn more ></strong></a>
     </div>
 </noscript>
 
@@ -2114,7 +2114,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1701615489238),
+    lastupdate: new Date(1701615837977),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -2152,8 +2152,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     languages: {
       
         search: {
-          hits_empty: "找不到您查詢的內容：${query}",
-          hits_stats: "找到 ${hits} 條結果，用時 ${time} 毫秒",
+          hits_empty: "We didn't find any results for the search: ${query}.",
+          hits_stats: "${hits} results found in ${time} ms",
         }
       
     }
@@ -2486,13 +2486,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class="new-meta-item wordcount">
     <a class='notlink'>
       <i class="fa-solid fa-keyboard fa-fw" aria-hidden="true"></i>
-      <p>字數：245字</p>
+      <p>245 words</p>
     </a>
   </div>
   <div class="new-meta-item readtime">
     <a class='notlink'>
       <i class="fa-solid fa-hourglass-half fa-fw" aria-hidden="true"></i>
-      <p>時長：1分鐘</p>
+      <p>1 min</p>
     </a>
   </div>
 
@@ -2549,13 +2549,21 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <h2 id="关于hexo-git-上传老是超时报错"><a href="#关于hexo-git-上传老是超时报错" class="headerlink" title="关于hexo git 上传老是超时报错"></a>关于hexo git 上传老是超时报错</h2><p>在配置完hexo 上传发布到 git 的时候老是会报错ssl, 超时错误.</p>
 <p><img src="https://raw.githubusercontent.com/rongchaoChen/mypic/main/img/202309302337039.png" class="lazyload" data-srcset="https://raw.githubusercontent.com/rongchaoChen/mypic/main/img/202309302337039.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
 <p>这时候可以修改hexo 根目录下的<code>_config.yml</code>的<code> deploy</code> 项的<code>repo</code> 下面是默认的</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">## repo: https://github.com/rongchaoChen/rongchaoChen.github.io.git</span><br></pre></td></tr></table></figure>
-
+<pre><code>## repo: https://github.com/rongchaoChen/rongchaoChen.github.io.git
+</code></pre>
 <p>修改成</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">repo: git@github.com:git用户名/git用户名.github.io</span><br></pre></td></tr></table></figure>
+<pre><code>
+repo: git@github.com:git用户名/git用户名.github.io
+</code></pre>
+<h2 id="hexo-文章模版"><a href="#hexo-文章模版" class="headerlink" title="hexo 文章模版"></a>hexo 文章模版</h2><pre><code>titile:文章名称
+author: chen
+categories: [文章分类]
+tag: &quot;文章标签&quot;
 
-<h2 id="hexo-文章模版"><a href="#hexo-文章模版" class="headerlink" title="hexo 文章模版"></a>hexo 文章模版</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">titile:文章名称</span><br><span class="line">author: chen</span><br><span class="line">categories: [文章分类]</span><br><span class="line">tag: &quot;文章标签&quot;</span><br><span class="line"></span><br><span class="line">文章摘要</span><br><span class="line">&lt;!--more --&gt;</span><br><span class="line">正文</span><br></pre></td></tr></table></figure>
-
+文章摘要
+&lt;!--more --&gt;
+正文
+</code></pre>
 <table>
 <thead>
 <tr>
@@ -2590,17 +2598,23 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </tbody></table>
 <h2 id="文章布局"><a href="#文章布局" class="headerlink" title="文章布局"></a>文章布局</h2><h3 id="文章分类"><a href="#文章分类" class="headerlink" title="文章分类"></a>文章分类</h3><p>多个分类有两种关系，一种是层级（等同于文件夹），一种是并列（等同于标签）。</p>
 <p>多级分类：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">categories: [分类A, 分类B]</span><br></pre></td></tr></table></figure>
-
+<pre><code>categories: [分类A, 分类B]
+</code></pre>
 <p>或者</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">categories:</span><br><span class="line">  - 分类A</span><br><span class="line">  - 分类B</span><br></pre></td></tr></table></figure>
-
+<pre><code>categories:
+  - 分类A
+  - 分类B
+</code></pre>
 <p>并列分类</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">categories:</span><br><span class="line">  - [分类A]</span><br><span class="line">  - [分类B]</span><br></pre></td></tr></table></figure>
-
+<pre><code>categories:
+  - [分类A]
+  - [分类B]
+</code></pre>
 <p>多级加并列分类</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">categories:</span><br><span class="line">  - [分类A, 分类B]</span><br><span class="line">  - [分类C, 分类D]</span><br></pre></td></tr></table></figure>
-
+<pre><code>categories:
+  - [分类A, 分类B]
+  - [分类C, 分类D]
+</code></pre>
 
   </div>
   
@@ -2824,14 +2838,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
     
       
-        <div><p>博客內容遵循 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh_TW">姓名標示-非商業性-相同方式分享 4.0 國際 (CC BY-NC-SA 4.0) 協議</a></p>
+        <div><p>Blog content follows the <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en">Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) License</a></p>
 </div>
       
     
       
-        本站使用
+        Use
         <a href="https://github.com/volantis-x/hexo-theme-volantis/#6.0.0-alpha.1" target="_blank" class="codename">Volantis</a>
-        作為主題
+        as theme
       
     
       
