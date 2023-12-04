@@ -253,6 +253,13 @@ td,
 th {
   padding: 0;
 }
+@font-face {
+  font-family: 'Monaco';
+  src: url("");
+  font-weight: '';
+  font-style: '';
+  font-display: swap;
+}
 article#arc,
 article#cat,
 article#tag {
