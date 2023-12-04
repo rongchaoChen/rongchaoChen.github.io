@@ -345,33 +345,6 @@
     
     
     <entry>
-      <title>intellij配置Tomcat</title>
-      <link href="/2023/03/26/intellij%E9%85%8D%E7%BD%AETomcat/"/>
-      <url>/2023/03/26/intellij%E9%85%8D%E7%BD%AETomcat/</url>
-      
-        <content type="html"><![CDATA[<p>记录一下intellij配置Tomcat, 首先intellij 和 tomcat 是肯定要的, intellij 版本为2022.1 ,tomcat为9.</p><h2 id="第一步打开Intellij"><a href="#第一步打开Intellij" class="headerlink" title="第一步打开Intellij"></a>第一步打开Intellij</h2><p>这时后在打开的目录下, 创建一个 new module, 选择java , 然后next 输入这个mdoule 名就好</p><img src="https://raw.githubusercontent.com/rongchaoChen/mypic/main/img/202303262148791.png" class="lazyload" data-srcset="https://raw.githubusercontent.com/rongchaoChen/mypic/main/img/202303262148791.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="图片alt"  /><ul><li>然后再这个新module 上右键选择 Add Framewrok Support 选择</li></ul><p><img src="https://raw.githubusercontent.com/rongchaoChen/mypic/main/img/202303262150533.png" class="lazyload" data-srcset="https://raw.githubusercontent.com/rongchaoChen/mypic/main/img/202303262150533.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p><ul><li><p>然后这时候的目录就是这样,然后我们再WEB-INF下面创建一个lib 文件和一个classes 文件 , lib 用来解压tomcat的jar包, classes,这时候我们的目录就搭建好了, 开始配置Tomcat</p><p><img src="https://raw.githubusercontent.com/rongchaoChen/mypic/main/img/202303262151014.png" class="lazyload" data-srcset="https://raw.githubusercontent.com/rongchaoChen/mypic/main/img/202303262151014.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p></li></ul><h2 id="配置Tomcat"><a href="#配置Tomcat" class="headerlink" title="配置Tomcat"></a>配置Tomcat</h2><p>注意Tomcat 和TomEE 不要选错 , 然后点击local  确认</p><p><img src="https://raw.githubusercontent.com/rongchaoChen/mypic/main/img/202303262156082.png" class="lazyload" data-srcset="https://raw.githubusercontent.com/rongchaoChen/mypic/main/img/202303262156082.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p><ul><li><p>这时候来到这里 选择自己安装好的Tomcat, </p><p><img src="https://raw.githubusercontent.com/rongchaoChen/mypic/main/img/202303262221159.png" class="lazyload" data-srcset="https://raw.githubusercontent.com/rongchaoChen/mypic/main/img/202303262221159.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p></li><li><p>这时候再点击Deployment</p><p><img src="https://raw.githubusercontent.com/rongchaoChen/mypic/main/img/202303262225486.png" class="lazyload" data-srcset="https://raw.githubusercontent.com/rongchaoChen/mypic/main/img/202303262225486.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p></li></ul><p><img src="C:\Users\chenr\AppData\Roaming\Typora\typora-user-images\image-20230326222336713.png" class="lazyload" data-srcset="C:\Users\chenr\AppData\Roaming\Typora\typora-user-images\image-20230326222336713.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20230326222336713"></p><p><img src="https://raw.githubusercontent.com/rongchaoChen/mypic/main/img/202303262226215.png" class="lazyload" data-srcset="https://raw.githubusercontent.com/rongchaoChen/mypic/main/img/202303262226215.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p><h2 id="项目设置"><a href="#项目设置" class="headerlink" title="项目设置"></a>项目设置</h2><p><img src="https://raw.githubusercontent.com/rongchaoChen/mypic/main/img/202303262228947.png" class="lazyload" data-srcset="https://raw.githubusercontent.com/rongchaoChen/mypic/main/img/202303262228947.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p><ul><li>这里Jar 包的目录选择之前创建的lib 文件中,</li></ul><p><img src="https://raw.githubusercontent.com/rongchaoChen/mypic/main/img/202303262236722.png" class="lazyload" data-srcset="https://raw.githubusercontent.com/rongchaoChen/mypic/main/img/202303262236722.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p><p><img src="https://raw.githubusercontent.com/rongchaoChen/mypic/main/img/202303262238289.png" class="lazyload" data-srcset="https://raw.githubusercontent.com/rongchaoChen/mypic/main/img/202303262238289.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p><ul><li><p>然后点击Paths把再把之前创建好的classes 文件设置成output path 的路径</p><p><img src="https://raw.githubusercontent.com/rongchaoChen/mypic/main/img/202303262242011.png" class="lazyload" data-srcset="https://raw.githubusercontent.com/rongchaoChen/mypic/main/img/202303262242011.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p></li></ul><p>然后启动Tomcat j就好了</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> intellij </category>
-          
-          <category> java </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> webpack/vue </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>webpack4配置vue2\3</title>
       <link href="/2023/03/26/webpack4%E9%85%8D%E7%BD%AEvue23/"/>
       <url>/2023/03/26/webpack4%E9%85%8D%E7%BD%AEvue23/</url>
