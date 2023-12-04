@@ -54,6 +54,31 @@
     
     
     <entry>
+      <title>Win10下12代处理器大小核调度</title>
+      <link href="/2023/11/14/Win10%E4%B8%8B12%E4%BB%A3%E5%A4%84%E7%90%86%E5%99%A8%E5%A4%A7%E5%B0%8F%E6%A0%B8%E8%B0%83%E5%BA%A6/"/>
+      <url>/2023/11/14/Win10%E4%B8%8B12%E4%BB%A3%E5%A4%84%E7%90%86%E5%99%A8%E5%A4%A7%E5%B0%8F%E6%A0%B8%E8%B0%83%E5%BA%A6/</url>
+      
+        <content type="html"><![CDATA[<h2 id="开启隐藏的控制"><a href="#开启隐藏的控制" class="headerlink" title="开启隐藏的控制"></a>开启隐藏的控制</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">powercfg -attributes SUB_PROCESSOR 7f2f5cfa-f10c-4823-b5e1-e93ae85f46b5 -ATTRIB_HIDE</span><br><span class="line">powercfg -attributes SUB_PROCESSOR 93b8b6dc-0698-4d1c-9ee4-0644e900c85d -ATTRIB_HIDE</span><br><span class="line">powercfg -attributes SUB_PROCESSOR bae08b81-2d5e-4688-ad6a-13243356654b -ATTRIB_HIDE</span><br><span class="line">powercfg -attributes SUB_PROCESSOR b28a6829-c5f7-444e-8f61-10e24e85c532 -ATTRIB_HIDE</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> windows </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> windows </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>web布局</title>
       <link href="/2023/10/19/web%E5%B8%83%E5%B1%80/"/>
       <url>/2023/10/19/web%E5%B8%83%E5%B1%80/</url>
@@ -91,8 +116,6 @@
       <categories>
           
           <category> Vue </category>
-          
-          <category> javascript </category>
           
       </categories>
       
@@ -144,9 +167,9 @@
       
       <categories>
           
-          <category> TypeScript </category>
-          
           <category> javascript </category>
+          
+          <category> TypeScript </category>
           
       </categories>
       
