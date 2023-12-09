@@ -43,11 +43,11 @@
 <meta property="og:title" content="Windows设置alias">
 <meta property="og:url" content="http://example.com/2023/12/09/Windows%E8%AE%BE%E7%BD%AEalias/index.html">
 <meta property="og:site_name" content="chen">
-<meta property="og:description" content="你是想说什么吗">
+<meta property="og:description" content="创建Powershell立即加载配置根目录创建一个$PROFILE文件, 该文件定义了自定义立即加载的设置 然后修改执行策略权限: 12345678get-ExecutionPolicy -List        Scope ExecutionPolicy        ----- ---------------MachinePolicy       Undefined   UserPolicy">
 <meta property="og:locale">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2023-12-09T06:53:06.212Z">
-<meta property="article:modified_time" content="2023-12-09T06:54:23.411Z">
+<meta property="article:modified_time" content="2023-12-09T09:28:23.680Z">
 <meta property="article:author" content="chen">
 <meta property="article:tag" content="windows">
 <meta name="twitter:card" content="summary">
@@ -2114,7 +2114,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1702104922727),
+    lastupdate: new Date(1702123250528),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -2486,13 +2486,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class="new-meta-item wordcount">
     <a class='notlink'>
       <i class="fa-solid fa-keyboard fa-fw" aria-hidden="true"></i>
-      <p>0 words</p>
+      <p>464 words</p>
     </a>
   </div>
   <div class="new-meta-item readtime">
     <a class='notlink'>
       <i class="fa-solid fa-hourglass-half fa-fw" aria-hidden="true"></i>
-      <p>1 min</p>
+      <p>2 min</p>
     </a>
   </div>
 
@@ -2550,7 +2550,31 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    
+    <h2 id="创建Powershell立即加载配置"><a href="#创建Powershell立即加载配置" class="headerlink" title="创建Powershell立即加载配置"></a>创建Powershell立即加载配置</h2><p>根目录创建一个<code>$PROFILE</code>文件, 该文件定义了自定义立即加载的设置</p>
+<p>然后修改执行策略权限:</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">get-ExecutionPolicy</span> <span class="literal">-List</span></span><br><span class="line">        Scope ExecutionPolicy</span><br><span class="line">        <span class="literal">-----</span> <span class="literal">---------------</span></span><br><span class="line">MachinePolicy       Undefined</span><br><span class="line">   UserPolicy       Undefined</span><br><span class="line">      <span class="keyword">Process</span>       Undefined</span><br><span class="line">  CurrentUser    RemoteSigned</span><br><span class="line"> LocalMachine    RemoteSigned  // 默认这行其实undefined</span><br></pre></td></tr></table></figure>
+
+<p>然后以管理员权限修改poweshell 来改变执行策略</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Set-ExecutionPolicy</span> <span class="literal">-ExecutionPolicy</span> RemoteSigned <span class="literal">-Scope</span> LocalMachine</span><br></pre></td></tr></table></figure>
+
+<h2 id="Set-Alias"><a href="#Set-Alias" class="headerlink" title="Set-Alias"></a>Set-Alias</h2><p>语法:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">Set-Alias</span><br><span class="line">   [-Name] &lt;string&gt; // 你要设置的别名</span><br><span class="line">   [-Value] &lt;string&gt; // 比如设置别名软件的路径</span><br><span class="line">   [-Description &lt;string&gt;] // 别名描述</span><br><span class="line">   [-Option &lt;ScopedItemOptions&gt;]</span><br><span class="line">   [-PassThru]</span><br><span class="line">   [-Scope &lt;string&gt;] // 指定别名的有效范围 : Global(全局), Local, Private(专用), Numbered scopes(编号范围), Scripts(脚本), 默认为Local(本地)</span><br><span class="line">   [-Force]  // 使用 Force 参数可以更改或删除 Option 参数设置为 ReadOnly 的别名。</span><br><span class="line">   [-WhatIf]  // 表示陨石</span><br><span class="line">   [-Confirm] // 在运行 cmdlet 之前提示您进行确认。</span><br><span class="line">   [&lt;CommonParameters&gt;]</span><br></pre></td></tr></table></figure>
+
+<h2 id="产看别名"><a href="#产看别名" class="headerlink" title="产看别名"></a>产看别名</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Get-Alias -Definition Get-ChildItem</span><br><span class="line">Get-Alias 别名</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="创建别名"><a href="#创建别名" class="headerlink" title="创建别名"></a>创建别名</h2><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">//  name 表示你设置的别名 value: 表示别名本身代表的操作</span><br><span class="line"><span class="built_in">Set-Alias</span> <span class="literal">-Name</span> list <span class="literal">-Value</span> <span class="built_in">Get-ChildItem</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="将现有别名重新分配"><a href="#将现有别名重新分配" class="headerlink" title="将现有别名重新分配"></a>将现有别名重新分配</h2><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">// 原来命令 list 和 <span class="built_in">Get-ChildItem</span> 绑定</span><br><span class="line"><span class="built_in">Set-Alias</span> <span class="literal">-Name</span> list <span class="literal">-Value</span> <span class="built_in">Get-ChildItem</span></span><br><span class="line">// 现在更改为何 <span class="built_in">Get-Location</span> 绑定</span><br><span class="line"><span class="built_in">Set-Alias</span> <span class="literal">-Name</span> list <span class="literal">-Value</span> <span class="built_in">Get-Location</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="创建和更改别名属性"><a href="#创建和更改别名属性" class="headerlink" title="创建和更改别名属性"></a>创建和更改别名属性</h2><p>添加<code>Force</code> 属性, 可以防止别名被意外更改</p>
+<p><code>get-Alias</code></p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Set-Alias</span> <span class="literal">-Name</span> loc <span class="literal">-Value</span> <span class="built_in">Get-Location</span> <span class="literal">-Option</span> ReadOnly <span class="literal">-PassThru</span> |</span><br><span class="line">    <span class="built_in">Format-List</span> <span class="literal">-Property</span> *</span><br><span class="line"></span><br><span class="line">DisplayName         : loc -&gt; <span class="built_in">Get-Location</span></span><br><span class="line">Definition          : <span class="built_in">Get-Location</span></span><br><span class="line">Options             : ReadOnly</span><br><span class="line">Description         :</span><br><span class="line">Name                : loc</span><br><span class="line">CommandType         : Alias</span><br><span class="line"></span><br><span class="line">// 以函数的形式设置</span><br><span class="line"><span class="variable">$Parameters</span> = <span class="selector-tag">@</span>&#123;</span><br><span class="line">    Name        =  <span class="string">&#x27;loc&#x27;</span></span><br><span class="line">    Value       =  (<span class="built_in">Get-Location</span>)</span><br><span class="line">    Option      =  <span class="string">&#x27;ReadOnly&#x27;</span></span><br><span class="line">    Description =  <span class="string">&#x27;Displays the current directory&#x27;</span></span><br><span class="line">    Force       = <span class="variable">$true</span></span><br><span class="line">    PassThru    = <span class="variable">$true</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">Set-Alias</span> @Parameters | <span class="built_in">Format-List</span> <span class="literal">-Property</span> *</span><br><span class="line"></span><br><span class="line">DisplayName         : loc -&gt; <span class="built_in">Get-Location</span></span><br><span class="line">Definition          : <span class="built_in">Get-Location</span></span><br><span class="line">Options             : ReadOnly</span><br><span class="line">Description         : Displays the current directory</span><br><span class="line">Name                : loc</span><br><span class="line">CommandType         : Alias</span><br></pre></td></tr></table></figure>
+
+<h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><p>其实如果只是日常使用, 基本都是在<code>PROFILE</code> 设置好别名, 基本就够用了, 如果还想要更多的设置, 慢慢看官网文档.</p>
+<p><a target="_blank" rel="noopener" href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.utility/get-alias?view=powershell-7.4">更多的看官网文档吧</a></p>
+
   </div>
   
   
@@ -2574,7 +2598,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-12-09T14:54:23+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-12-09T17:28:23+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
     <p>更新于：Dec 9, 2023</p>
@@ -2724,7 +2748,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
   <div class='content'>
-      
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9B%E5%BB%BAPowershell%E7%AB%8B%E5%8D%B3%E5%8A%A0%E8%BD%BD%E9%85%8D%E7%BD%AE"><span class="toc-number">1.</span> <span class="toc-text">创建Powershell立即加载配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Set-Alias"><span class="toc-number">2.</span> <span class="toc-text">Set-Alias</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%A7%E7%9C%8B%E5%88%AB%E5%90%8D"><span class="toc-number">3.</span> <span class="toc-text">产看别名</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E5%88%AB%E5%90%8D"><span class="toc-number">4.</span> <span class="toc-text">创建别名</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B0%86%E7%8E%B0%E6%9C%89%E5%88%AB%E5%90%8D%E9%87%8D%E6%96%B0%E5%88%86%E9%85%8D"><span class="toc-number">5.</span> <span class="toc-text">将现有别名重新分配</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E5%92%8C%E6%9B%B4%E6%94%B9%E5%88%AB%E5%90%8D%E5%B1%9E%E6%80%A7"><span class="toc-number">6.</span> <span class="toc-text">创建和更改别名属性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%80%E5%90%8E"><span class="toc-number">7.</span> <span class="toc-text">最后</span></a></li></ol>
   </div>
 </section>
 
@@ -3218,7 +3242,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"chen","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"chen","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"你是想说什么吗"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"chen"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/categories/windows/","name":"windows"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/categories/工具/","name":"工具"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2023/12/09/Windows设置alias/","name":"Windows设置alias"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"chen","url":"http://example.com/","keywords":null,"description":"你是想说什么吗","author":{"@type":"Person","name":"chen","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"你是想说什么吗"},"publisher":{"@type":"Organization","name":"chen","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Windows设置alias","description":"你是想说什么吗","inLanguage":"-zh-CN -en","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2023/12/09/Windows%E8%AE%BE%E7%BD%AEalias/"},"author":{"@type":"Person","name":"chen","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"chen","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2023/12/09/Windows%E8%AE%BE%E7%BD%AEalias/","wordCount":0,"datePublished":"2023-12-09T06:53:06.212Z","dateModified":"2023-12-09T06:54:23.411Z","articleSection":"windows","keywords":"windows","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"chen","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"chen","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"你是想说什么吗"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"chen"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/categories/windows/","name":"windows"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/categories/工具/","name":"工具"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2023/12/09/Windows设置alias/","name":"Windows设置alias"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"chen","url":"http://example.com/","keywords":null,"description":"你是想说什么吗","author":{"@type":"Person","name":"chen","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"你是想说什么吗"},"publisher":{"@type":"Organization","name":"chen","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Windows设置alias","description":"你是想说什么吗","inLanguage":"-zh-CN -en","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2023/12/09/Windows%E8%AE%BE%E7%BD%AEalias/"},"author":{"@type":"Person","name":"chen","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"chen","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2023/12/09/Windows%E8%AE%BE%E7%BD%AEalias/","wordCount":0,"datePublished":"2023-12-09T06:53:06.212Z","dateModified":"2023-12-09T09:28:23.680Z","articleSection":"windows","keywords":"windows","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
